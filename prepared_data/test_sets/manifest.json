@@ -1,0 +1,35 @@
+{
+  "bird": {
+    "type": "bird",
+    "samples": 1521,
+    "items": "bird/items.json",
+    "config": {
+      "type": "bird"
+    },
+    "evaluation": "unordered SQLite execution-result equality"
+  },
+  "ehrsql": {
+    "type": "ehrsql",
+    "samples": 744,
+    "items": "ehrsql/items.json",
+    "config": {
+      "type": "ehrsql",
+      "data_file": "data/ehrsql_test.json",
+      "data_root": "/public/home/yaozhiming/yzm/Text2SQL/data/EHRSQL"
+    },
+    "evaluation": "unordered SQLite execution-result equality"
+  },
+  "spider2.0": {
+    "type": "spider2",
+    "samples": 135,
+    "items": "spider2.0/items.json",
+    "config": {
+      "type": "spider2",
+      "data_file": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/test.json",
+      "data_root": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite",
+      "eval_metadata": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/spider2_sqlite_eval.jsonl",
+      "gold_dir": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/gold_exec_result"
+    },
+    "evaluation": "official Spider2 CSV table match"
+  }
+}

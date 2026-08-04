@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "local024",
+    "dataset": "spider2.0",
+    "db_id": "IPL",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/IPL/IPL.sqlite",
+    "question": "Can you help me find the top 5 countries with the highest average runs per match for all players across all seasons, and also include their batting averages?",
+    "evidence": ""
+  },
+  {
+    "id": "local229",
+    "dataset": "spider2.0",
+    "db_id": "IPL",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/IPL/IPL.sqlite",
+    "question": "Find the IDs of players who scored the highest number of partnership runs for each match. The output should include the IDs of two players, each with their individual scores and the total partnership score. There can  be multiple rows for a single match.",
+    "evidence": ""
+  },
+  {
+    "id": "local023",
+    "dataset": "spider2.0",
+    "db_id": "IPL",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/IPL/IPL.sqlite",
+    "question": "Please help me find the names of top 5 players with the highest average runs per match in season 5, along with their batting averages.",
+    "evidence": ""
+  },
+  {
+    "id": "local015",
+    "dataset": "spider2.0",
+    "db_id": "California_Traffic_Collision",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/California_Traffic_Collision/California_Traffic_Collision.sqlite",
+    "question": "Help me respectively caulculate the percentage of motorcycle accident fatalities involving riders who were wearing helmets and those who weren't?",
+    "evidence": ""
+  },
+  {
+    "id": "local218",
+    "dataset": "spider2.0",
+    "db_id": "EU_soccer",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/EU_soccer/EU_soccer.sqlite",
+    "question": "Can you calculate the median from the highest season goals of each team?",
+    "evidence": ""
+  },
+  {
+    "id": "local220",
+    "dataset": "spider2.0",
+    "db_id": "EU_soccer",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/EU_soccer/EU_soccer.sqlite",
+    "question": "Who is the player with the most wins?",
+    "evidence": ""
+  },
+  {
+    "id": "local274",
+    "dataset": "spider2.0",
+    "db_id": "oracle_sql",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/oracle_sql/oracle_sql.sqlite",
+    "question": "Which products were picked for order 421, and what is the average number of units picked for each product, using FIFO (First-In, First-Out) method?",
+    "evidence": ""
+  },
+  {
+    "id": "local041",
+    "dataset": "spider2.0",
+    "db_id": "modern_data",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/modern_data/modern_data.sqlite",
+    "question": "What percentage of trees in the Bronx have a health status of Good?",
+    "evidence": ""
+  },
+  {
+    "id": "local273",
+    "dataset": "spider2.0",
+    "db_id": "oracle_sql",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/oracle_sql/oracle_sql.sqlite",
+    "question": "What is the average pick percentage for each product (by name), considering the quantity picked from inventory locations that are ordered by the earliest purchase date and smallest quantity, while ensuring that the picked quantity matches the overlapping range between the order quantity and the available inventory?",
+    "evidence": ""
+  },
+  {
+    "id": "local077",
+    "dataset": "spider2.0",
+    "db_id": "bank_sales_trading",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/bank_sales_trading/bank_sales_trading.sqlite",
+    "question": "Please review our interest data from September 2018 to August 2019. I need to know the max average composition value for each month, as well as the three-month rolling average. Ensure the output includes the date, the interest name, the max index composition for that month, the rolling average, and the top-ranking interests from the one month ago and two months ago with their names.",
+    "evidence": ""
+  },
+  {
+    "id": "local070",
+    "dataset": "spider2.0",
+    "db_id": "city_legislation",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/city_legislation/city_legislation.sqlite",
+    "question": "Please examine our records for Chinese cities in July 2021 and identify both the shortest and longest streaks of consecutive date entries. List the dates along with their corresponding city names, capitalizing the first letter of each city name, for these streaks.",
+    "evidence": ""
+  },
+  {
+    "id": "local221",
+    "dataset": "spider2.0",
+    "db_id": "EU_soccer",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/EU_soccer/EU_soccer.sqlite",
+    "question": "Tell me top10 teams with the most wins across the league",
+    "evidence": ""
+  },
+  {
+    "id": "local219",
+    "dataset": "spider2.0",
+    "db_id": "EU_soccer",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/EU_soccer/EU_soccer.sqlite",
+    "question": "Which single team has the fewest wins in each league?",
+    "evidence": ""
+  },
+  {
+    "id": "local022",
+    "dataset": "spider2.0",
+    "db_id": "IPL",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/IPL/IPL.sqlite",
+    "question": "Show me the names of strikers who scored no less than 100 runs in a match, but their team lost the game?",
+    "evidence": ""
+  },
+  {
+    "id": "local210",
+    "dataset": "spider2.0",
+    "db_id": "delivery_center",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/delivery_center/delivery_center.sqlite",
+    "question": "Can you identify the hubs that saw more than a 20% increase in finished orders from February to March?",
+    "evidence": ""
+  },
+  {
+    "id": "local025",
+    "dataset": "spider2.0",
+    "db_id": "IPL",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/IPL/IPL.sqlite",
+    "question": "Please calculate the average of the highest runs conceded in a single over for each match.",
+    "evidence": ""
+  },
+  {
+    "id": "local228",
+    "dataset": "spider2.0",
+    "db_id": "IPL",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/IPL/IPL.sqlite",
+    "question": "Identify the top three batsmen with the most runs and the top three bowlers with the most wickets in each season, displaying them in the same row for each season. In case of ties, prioritize players with lower player_ids. Exclude 'run out', 'hit wicket', and 'retired hurt' as out_types for bowlers.",
+    "evidence": ""
+  },
+  {
+    "id": "local071",
+    "dataset": "spider2.0",
+    "db_id": "city_legislation",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/city_legislation/city_legislation.sqlite",
+    "question": "Could you review our records in June 2022 and identify which countries have the longest streak of consecutive inserted city dates? Please list the 2-letter length country codes of these countries.",
+    "evidence": ""
+  },
+  {
+    "id": "local085",
+    "dataset": "spider2.0",
+    "db_id": "northwind",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/northwind/northwind.sqlite",
+    "question": "Can you tell me the ID of the top 3 employees who have the highest percentage of orders delivered late, considering only those with more than 50 total orders? Also provide their respective number of late orders and the percentage. ",
+    "evidence": ""
+  },
+  {
+    "id": "local049",
+    "dataset": "spider2.0",
+    "db_id": "modern_data",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/modern_data/modern_data.sqlite",
+    "question": "Can you help me calculate the average number of new unicorn companies per year in the top industry from 2019 to 2021?",
+    "evidence": ""
+  },
+  {
+    "id": "local244",
+    "dataset": "spider2.0",
+    "db_id": "music",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/music/music.sqlite",
+    "question": "Calculate the duration of each track, classify them as short, medium, or long, output the minimum and maximum time for each kind (in minutes) and the total revenue for each category, group by the category.",
+    "evidence": "# Music Length Types\n\n## Short \n- Duration between the minimum value and the midpoint between the minimum and average values.\n\n## Medium \n- Duration between the midpoint between the minimum and average values and the midpoint between the average and maximum values.\n\n## Long \n- Duration between the midpoint between the average and maximum values and the maximum value."
+  },
+  {
+    "id": "local286",
+    "dataset": "spider2.0",
+    "db_id": "electronic_sales",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/electronic_sales/electronic_sales.sqlite",
+    "question": "Prepare a comprehensive performance report on our sellers, focusing on total sales, average item price, average review scores, and packing times. Ensure that the report includes only those sellers who have sold a quantity of more than 100 products and highlight the product category names in English with the highest sales volume.",
+    "evidence": ""
+  },
+  {
+    "id": "local272",
+    "dataset": "spider2.0",
+    "db_id": "oracle_sql",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/oracle_sql/oracle_sql.sqlite",
+    "question": "Which product ID, aisle, and position should be selected to pick the highest quantity for order 423, ensuring the picked quantity does not exceed the available inventory in warehouse 1, and calculate the quantity to be picked while prioritizing locations with earlier dates and smaller quantities?",
+    "evidence": ""
+  },
+  {
+    "id": "local040",
+    "dataset": "spider2.0",
+    "db_id": "modern_data",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/modern_data/modern_data.sqlite",
+    "question": "Which three boroughs have the highest number of trees, and what is the average mean income for each, considering only areas where both median and mean income estimates are greater than zero, and using the available ZIP code income data when tree ZIP codes are missing?",
+    "evidence": ""
+  },
+  {
+    "id": "local078",
+    "dataset": "spider2.0",
+    "db_id": "bank_sales_trading",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/bank_sales_trading/bank_sales_trading.sqlite",
+    "question": "Identify the top 10 and bottom 10 interest categories based on their highest composition values across all months. For each category, display the time(MM-YYYY), interest name, and the composition value",
+    "evidence": ""
+  },
+  {
+    "id": "local275",
+    "dataset": "spider2.0",
+    "db_id": "oracle_sql",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/oracle_sql/oracle_sql.sqlite",
+    "question": "Which products (by name) had a seasonality-adjusted sales ratio consistently above 2 for the entire year of 2017, based on monthly sales data from January 2016?",
+    "evidence": "# Explanation of Metrics\n\n## 1. Sales-to-CMA Ratio\n- **Definition**: This ratio compares actual sales to the centered moving average (CMA) of sales.\n- **Calculation**:\n  - **Centered Moving Average (CMA)**: The CMA is a smoothed value of sales calculated over a rolling 12-month period. It averages sales from the months before and after a given month, specifically using two overlapping windows (5 months before and 6 months after, and vice versa).\n  - **Sales-to-CMA Ratio**: The ratio is computed by dividing the actual sales amount for a month by its corresponding CMA value. A ratio greater than 2 indicates that the actual sales are more than twice the smoothed average for that period, suggesting significantly higher-than-average sales.\n\n## 2. 12-Month Overlapping Windows\n- **Definition**: A method to smooth sales data over time by averaging values in a specified window.\n- **Calculation**:\n  - **Window Size**: The window spans 12 months, with the specific approach involving overlapping periods. \n  - **First Window**: For a given month, this window includes 5 months before and 6 months after.\n  - **Second Window**: Another window includes 6 months before and 5 months after the given month.\n  - **Averaging**: Sales data is averaged over these two overlapping windows to compute the CMA. This method smooths out fluctuations by considering both the past and future sales in the calculation.\n\n## 3. Restriction to the 7th and 30th Months\n- **Definition**: A filter applied to focus calculations within a specific range of months.\n- **Calculation**:\n  - **Time Range**: Only the months between the 7th and 30th time steps (which correspond to specific periods) are considered for calculating the CMA and ratio.\n  - **Purpose**: This restriction is used to avoid edge effects in the data where the moving average might be less reliable (e.g., at the very beginning or end of the available data). By focusing on these months, the calculations are more stable and meaningful."
+  },
+  {
+    "id": "local300",
+    "dataset": "spider2.0",
+    "db_id": "bank_sales_trading",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/bank_sales_trading/bank_sales_trading.sqlite",
+    "question": "Could you calculate the highest daily balance each customer had within each month? Treat any negative daily balances as zero. Then, for each month, add up these maximum daily balances across all customers to get a monthly total.",
+    "evidence": ""
+  },
+  {
+    "id": "local132",
+    "dataset": "spider2.0",
+    "db_id": "EntertainmentAgency",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/EntertainmentAgency/EntertainmentAgency.sqlite",
+    "question": "Show entertainer and customer pairs where both the first and second style preferences of customers match the first and second strengths of entertainers (or vice versa), displaying only the entertainer's stage name and the customer's last name.",
+    "evidence": ""
+  },
+  {
+    "id": "local336",
+    "dataset": "spider2.0",
+    "db_id": "f1",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/f1/f1.sqlite",
+    "question": "How many overtakes of each type occurred during the first five laps of the race?",
+    "evidence": "# Overtake Label Classification\n\nIn racing, overtakes are categorized into different states based on specific conditions, reflecting the circumstances in which the overtaking occurred. Below are the classifications and their detailed explanations:\n\n## 1. R (Retirement) - Overtake during Retirement\nAn overtake is labeled as **R (Retirement)** if the overtaken driver retired on the same lap as the overtake. This indicates that the overtake occurred just before or during the overtaken driver's retirement, meaning they could no longer continue the race after that lap.\n\n## 2. P (Pit) - Overtake related to Pit Stops\nAn overtake is classified as **P (Pit)** under two scenarios:\n   - **Pit Entry**: If the overtake occurred while the overtaken driver was entering the pit lane, and the driver pitted on the same lap, it indicates that the overtaking happened due to the overtaken driver reducing speed to enter the pit lane.\n   - **Pit Exit**: If the overtake occurred as the overtaken driver was exiting the pit lane, especially if the driver pitted on the previous lap and the time gap between the drivers was less than a typical pit stop duration. This suggests that the overtake happened while the overtaken driver was potentially at a lower speed, rejoining the race track from the pit lane.\n\n## 3. S (Start) - Overtake at Race Start\nIf the overtake took place on the first lap of the race, and the two drivers were within two grid positions of each other at the start, the overtake is classified as **S (Start)**. This classification indicates that the overtake was part of the initial racing shuffle during the race's launch phase, where close position changes are common.\n\n## 4. T (Track) - Overtake under Normal Racing Conditions\nIf none of the above conditions apply, the overtake is categorized as **T (Track)**, meaning it occurred during normal racing conditions on the track, without any external factors like pit stops or retirements influencing the outcome. This is the default classification for overtakes that happen during regular competition.\n\n---\n\nThese classifications help to identify and record the context of each overtake with clarity, ensuring accurate representation of race dynamics."
+  },
+  {
+    "id": "local309",
+    "dataset": "spider2.0",
+    "db_id": "f1",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/f1/f1.sqlite",
+    "question": "For each year, which driver and which constructor scored the most points? I want the full name of each driver.",
+    "evidence": ""
+  },
+  {
+    "id": "local331",
+    "dataset": "spider2.0",
+    "db_id": "log",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/log/log.sqlite",
+    "question": "List the three most common third actions users take after visiting the `/detail` page twice in a row, including each action's occurrence count.",
+    "evidence": ""
+  },
+  {
+    "id": "local168",
+    "dataset": "spider2.0",
+    "db_id": "city_legislation",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/city_legislation/city_legislation.sqlite",
+    "question": "What is the average salary for remote Data Analyst jobs requiring the top three most in-demand skills?",
+    "evidence": ""
+  },
+  {
+    "id": "local157",
+    "dataset": "spider2.0",
+    "db_id": "bank_sales_trading",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/bank_sales_trading/bank_sales_trading.sqlite",
+    "question": "For our upcoming meeting, please provide the daily percentage change in trading volume for all tickers from August 1 to August 10, 2021. This trend analysis is crucial for our strategic planning.",
+    "evidence": ""
+  },
+  {
+    "id": "local354",
+    "dataset": "spider2.0",
+    "db_id": "f1",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/f1/f1.sqlite",
+    "question": "Which Formula 1 drivers, during the 1950s, had seasons in which they did not change their constructors at the beginning and end of the year and participated in at least two different race rounds within those seasons?",
+    "evidence": ""
+  },
+  {
+    "id": "local195",
+    "dataset": "spider2.0",
+    "db_id": "sqlite-sakila",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/sqlite-sakila/sqlite-sakila.sqlite",
+    "question": "Please find out how widespread the appeal of our top five actors is. What percentage of our customers have rented films featuring these actors?",
+    "evidence": ""
+  },
+  {
+    "id": "local330",
+    "dataset": "spider2.0",
+    "db_id": "log",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/log/log.sqlite",
+    "question": "For each web page, how many unique user sessions either start or end there",
+    "evidence": ""
+  },
+  {
+    "id": "local133",
+    "dataset": "spider2.0",
+    "db_id": "EntertainmentAgency",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/EntertainmentAgency/EntertainmentAgency.sqlite",
+    "question": "In a scoring system where the first preference in musical styles receives 3 points, the second 2 points, and the third 1 point, calculate the total weighted score for each style ranked by at least one user. Determine the absolute differences between each style's weighted score and the average score across all styles.",
+    "evidence": ""
+  },
+  {
+    "id": "local301",
+    "dataset": "spider2.0",
+    "db_id": "bank_sales_trading",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/bank_sales_trading/bank_sales_trading.sqlite",
+    "question": "I need an analysis of our sales performance around mid-June for the years 2018, 2019, and 2020. Specifically, calculate the percentage change in sales between the four weeks leading up to June 15 and the four weeks following June 15 for each year.",
+    "evidence": ""
+  },
+  {
+    "id": "local194",
+    "dataset": "spider2.0",
+    "db_id": "sqlite-sakila",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/sqlite-sakila/sqlite-sakila.sqlite",
+    "question": "Please provide a list of the top three revenue-generating films for each actor, along with the average revenue per actor in those films, calculated by dividing the total film revenue equally among the actors for each film.",
+    "evidence": ""
+  },
+  {
+    "id": "local193",
+    "dataset": "spider2.0",
+    "db_id": "sqlite-sakila",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/sqlite-sakila/sqlite-sakila.sqlite",
+    "question": "Could you find out the average percentage of the total lifetime sales (LTV) that occur in the first 7 and 30 days after a customer's initial purchase? Also, include the average total lifetime sales (LTV). Please exclude customers with zero lifetime sales. The percentage should be shown with %, and the 7- and 30-day periods should be based on the exact number of hours-minutes-seconds, not calendar days.",
+    "evidence": ""
+  },
+  {
+    "id": "local355",
+    "dataset": "spider2.0",
+    "db_id": "f1",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/f1/f1.sqlite",
+    "question": "Calculate the average first and last rounds of races missed by drivers each year. Only include drivers who missed fewer than three races annually and switched teams between their first and last missed races",
+    "evidence": ""
+  },
+  {
+    "id": "local167",
+    "dataset": "spider2.0",
+    "db_id": "city_legislation",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/city_legislation/city_legislation.sqlite",
+    "question": "Which state has the highest number of female legislators whose term end dates fall on December 31st, and what is that count? Please provide state name abbreviation.",
+    "evidence": ""
+  },
+  {
+    "id": "local169",
+    "dataset": "spider2.0",
+    "db_id": "city_legislation",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/city_legislation/city_legislation.sqlite",
+    "question": "What is the annual retention rate for Colorado legislators who started their first term between 1917 and 1999, tracked up to 20 years later?",
+    "evidence": ""
+  },
+  {
+    "id": "local156",
+    "dataset": "spider2.0",
+    "db_id": "bank_sales_trading",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/bank_sales_trading/bank_sales_trading.sqlite",
+    "question": "Can you analyze the yearly average cost of Bitcoin purchases by region, excluding the first year's data? Rank the regions based on these averages each year and calculate the annual percentage change in cost.",
+    "evidence": ""
+  },
+  {
+    "id": "local128",
+    "dataset": "spider2.0",
+    "db_id": "BowlingLeague",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/BowlingLeague/BowlingLeague.sqlite",
+    "question": "List the bowlers, match number, game number, handicap score, tournament date, and location for only those bowlers who won their game with a handicap score of 190 or less at Thunderbird Lanes, Totem Lanes, and Bolero Lanes.",
+    "evidence": ""
+  },
+  {
+    "id": "local065",
+    "dataset": "spider2.0",
+    "db_id": "modern_data",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/modern_data/modern_data.sqlite",
+    "question": "Calculate the total income from Meat Lovers pizzas priced at $12 and Vegetarian pizzas at $10. Include any extra toppings charged at $1 each. Ensure that canceled orders are filtered out. How much money has Pizza Runner earned in total?",
+    "evidence": ""
+  },
+  {
+    "id": "local096",
+    "dataset": "spider2.0",
+    "db_id": "Db-IMDB",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Db-IMDB/Db-IMDB.sqlite",
+    "question": "I'm interested in knowing the proportion of films that had exclusively female actors for each year. Show the proportion of female-actor-only films and the total number of all films for each of those years.",
+    "evidence": ""
+  },
+  {
+    "id": "local062",
+    "dataset": "spider2.0",
+    "db_id": "complex_oracle",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/complex_oracle/complex_oracle.sqlite",
+    "question": "Can you segment Italian customers into ten profitability buckets for December 2021, using equal profit intervals, and calculate the following for each bucket in December 2021: the number of customers, maximum profit, and minimum profit?",
+    "evidence": ""
+  },
+  {
+    "id": "local054",
+    "dataset": "spider2.0",
+    "db_id": "chinook",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/chinook/chinook.sqlite",
+    "question": "Could you tell me the first names of customers who spent less than $1 on albums by the best-selling artist, along with the amounts they spent?",
+    "evidence": ""
+  },
+  {
+    "id": "local259",
+    "dataset": "spider2.0",
+    "db_id": "IPL",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/IPL/IPL.sqlite",
+    "question": "For each player, list their ID, name, most frequent role across all matches, batting hand, bowling skill, total runs scored, total matches played, total dismissals, batting average, highest score in a single match, number of matches where their score exceeded 30, 50, and 100, total balls faced in their career, strike rate, total wickets taken, economy rate, and their best performance in a single match (most wickets taken, in the format \"wickets taken-runs given\"). Ignore the extra runs data.",
+    "evidence": "# Special Words Definition\n\n## Batting Average\n- Batting average is a measure of a batsman's performance, calculated by dividing the total number of runs scored by the number of times they have been dismissed. A higher batting average indicates a more consistent and successful batsman.\n- Batting Average = Total Runs ÷ Total Dismissals\n\n## Strike Rate\n- In batting, strike rate indicates the scoring rate of a batsman, showing the average number of runs scored per 100 balls faced. A higher strike rate reflects an aggressive and fast-scoring batsman.\n- Strike Rate = (Total Runs ÷ Balls Faced) × 100\n\n## Wickets Taken\n- Wickets taken refers to the total number of times a bowler has successfully dismissed an opposing batsman. This statistic is a core measure of a bowler's effectiveness and impact on the game.\n\n## Economy Rate\n- Economy rate measures a bowler's efficiency by indicating the average number of runs conceded per over (6 balls) bowled. A lower economy rate shows greater control and efficiency in restricting the opposition's scoring.\n- Economy Rate = (Total Runs Conceded ÷ Balls Bowled) × 6\n\n## Wickets Taken\n- The number of times a bowler successfully dismisses a batsman in a single match.  This metric is a direct indicator of the bowler's effectiveness, showing how many players they were able to remove from play.\n\n## Runs Given\n- The total number of runs scored by the batting side off a particular bowler’s deliveries in a single match.  This value reflects the runs the bowler has conceded to the batting team, and a lower runs-given value is typically favorable for the bowler's performance."
+  },
+  {
+    "id": "local098",
+    "dataset": "spider2.0",
+    "db_id": "Db-IMDB",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Db-IMDB/Db-IMDB.sqlite",
+    "question": "I'd like to know how many actors have managed to avoid long breaks in their careers. Could you check our records to see how many actors haven't been out of work for more than three years at any point?",
+    "evidence": ""
+  },
+  {
+    "id": "local038",
+    "dataset": "spider2.0",
+    "db_id": "Pagila",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Pagila/Pagila.sqlite",
+    "question": "Could you help me find the actor who appeared most in English G or PG-rated children's movies no longer than 2 hours, released between 2000 and 2010？Give me a full name.",
+    "evidence": ""
+  },
+  {
+    "id": "local007",
+    "dataset": "spider2.0",
+    "db_id": "Baseball",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Baseball/Baseball.sqlite",
+    "question": "Could you help me calculate the average single career span value in years for all baseball players? Please precise the result as a float number. If it's a full year, we count it as one year. If it's less than a full year but full months, we consider 12 months as one year. If it's less than a month, we consider 365 days as one year.",
+    "evidence": ""
+  },
+  {
+    "id": "local009",
+    "dataset": "spider2.0",
+    "db_id": "Airlines",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Airlines/Airlines.sqlite",
+    "question": "What is the distance of the longest route where Abakan is either the departure or destination city (in kilometers)?",
+    "evidence": "# Flight Route Distance Calculation\n\n## Introduction\n\nThis document describes the method used to calculate the distance between two cities for flight routes. The calculation is based on the Haversine formula, which is commonly used to find the shortest distance between two points on a sphere given their latitude and longitude. This method is especially useful for determining flight distances between airports located in different cities around the world.\n\n## City and Coordinate Extraction\n\nFor each flight, the following data is obtained:\n\n- **Departure city** (referred to as `from_city`) and its geographical coordinates (longitude and latitude).\n- **Arrival city** (referred to as `to_city`) and its geographical coordinates (longitude and latitude).\n\nThe coordinates are extracted as decimal values, with longitude and latitude represented in degrees. This ensures that trigonometric operations can be applied during the distance calculation.\n\n## Haversine Formula\n\nThe Haversine formula is used to calculate the great-circle distance between two points on a sphere using their latitude and longitude. The formula is given as:\n\n\\[\nd = 2r \\cdot \\arcsin\\left(\\sqrt{\\sin^2\\left(\\frac{\\Delta \\phi}{2}\\right) + \\cos(\\phi_1) \\cdot \\cos(\\phi_2) \\cdot \\sin^2\\left(\\frac{\\Delta \\lambda}{2}\\right)}\\right)\n\\]\n\nWhere:\n\n- \\( d \\) is the distance between the two points (in kilometers).\n- \\( r \\) is the radius of the Earth (approximately 6371 km).\n- \\( \\phi_1 \\) and \\( \\phi_2 \\) are the latitudes of the departure and arrival points, respectively, in radians.\n- \\( \\Delta \\phi = \\phi_2 - \\phi_1 \\) is the difference in latitudes.\n- \\( \\lambda_1 \\) and \\( \\lambda_2 \\) are the longitudes of the departure and arrival points, respectively, in radians.\n- \\( \\Delta \\lambda = \\lambda_2 - \\lambda_1 \\) is the difference in longitudes.\n\n### Conversion to Radians\n\nSince the input coordinates are in degrees, they must be converted to radians before applying the Haversine formula. This conversion is done using the formula:\n\n\\[\n\\text{radians} = \\text{degrees} \\times \\frac{\\pi}{180}\n\\]\n\n## Symmetry of Routes\n\nTo identify unique flight routes between two cities, we standardize the order of cities in each route. Specifically, we ensure that the lexicographically smaller city name is always listed as the first city (`city1`), and the larger city is listed as the second city (`city2`). This ensures that a flight from City A to City B is treated the same as a flight from City B to City A.\n\n## Average Route Distance\n\nOnce the distances for all flights between two cities are computed, the average distance for each city pair is calculated by summing the distances and dividing by the total number of flights between those cities:\n\n\\[\n\\text{Average Distance} = \\frac{\\sum \\text{Flight Distances}}{\\text{Number of Flights}}\n\\]\n\n## Conclusion\n\nThis method of flight route distance calculation provides a reliable way to determine the great-circle distance between cities based on the coordinates of their respective airports. The use of the Haversine formula ensures accurate results for distances on the Earth's surface, making it ideal for aviation and travel analysis."
+  },
+  {
+    "id": "local031",
+    "dataset": "spider2.0",
+    "db_id": "Brazilian_E_Commerce",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Brazilian_E_Commerce/Brazilian_E_Commerce.sqlite",
+    "question": "What is the highest monthly delivered orders volume in the year with the lowest annual delivered orders volume among 2016, 2017, and 2018?",
+    "evidence": ""
+  },
+  {
+    "id": "local099",
+    "dataset": "spider2.0",
+    "db_id": "Db-IMDB",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Db-IMDB/Db-IMDB.sqlite",
+    "question": "I need you to look into the actor collaborations and tell me how many actors have made more films with Yash Chopra than with any other director. This will help us understand his influence on the industry better.",
+    "evidence": ""
+  },
+  {
+    "id": "local055",
+    "dataset": "spider2.0",
+    "db_id": "chinook",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/chinook/chinook.sqlite",
+    "question": "What is the difference in average spending between customers who bought albums from the best-selling artist and those who bought from the least-selling artist? If there is a tie for either best-selling or lowest-selling, choose the artist whose name comes first alphabetically.",
+    "evidence": ""
+  },
+  {
+    "id": "local258",
+    "dataset": "spider2.0",
+    "db_id": "IPL",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/IPL/IPL.sqlite",
+    "question": "What are the total wickets taken by each bowler, their economy rate, their strike rate, and their best performance in a single match (most wickets taken, in the format \"wickets-runs\")? Ignore the extra runs data.",
+    "evidence": "# Special Words Definition\n\n## Batting Average\n- Batting average is a measure of a batsman's performance, calculated by dividing the total number of runs scored by the number of times they have been dismissed. A higher batting average indicates a more consistent and successful batsman.\n- Batting Average = Total Runs ÷ Total Dismissals\n\n## Strike Rate\n- In batting, strike rate indicates the scoring rate of a batsman, showing the average number of runs scored per 100 balls faced. A higher strike rate reflects an aggressive and fast-scoring batsman.\n- Strike Rate = (Total Runs ÷ Balls Faced) × 100\n\n## Wickets Taken\n- Wickets taken refers to the total number of times a bowler has successfully dismissed an opposing batsman. This statistic is a core measure of a bowler's effectiveness and impact on the game.\n\n## Economy Rate\n- Economy rate measures a bowler's efficiency by indicating the average number of runs conceded per over (6 balls) bowled. A lower economy rate shows greater control and efficiency in restricting the opposition's scoring.\n- Economy Rate = (Total Runs Conceded ÷ Balls Bowled) × 6\n\n## Wickets Taken\n- The number of times a bowler successfully dismisses a batsman in a single match.  This metric is a direct indicator of the bowler's effectiveness, showing how many players they were able to remove from play.\n\n## Runs Given\n- The total number of runs scored by the batting side off a particular bowler’s deliveries in a single match.  This value reflects the runs the bowler has conceded to the batting team, and a lower runs-given value is typically favorable for the bowler's performance."
+  },
+  {
+    "id": "local063",
+    "dataset": "spider2.0",
+    "db_id": "complex_oracle",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/complex_oracle/complex_oracle.sqlite",
+    "question": "Which product has the smallest change in sales share for each product from the top 20% of products by total sales between Q4 in 2019 and 2020 in US without any promotion?",
+    "evidence": ""
+  },
+  {
+    "id": "local097",
+    "dataset": "spider2.0",
+    "db_id": "Db-IMDB",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Db-IMDB/Db-IMDB.sqlite",
+    "question": "Could you analyze our data and identify which any consecutive ten-year period had the largest number of films? Only output the start year and the total count for that specific period.",
+    "evidence": ""
+  },
+  {
+    "id": "local064",
+    "dataset": "spider2.0",
+    "db_id": "bank_sales_trading",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/bank_sales_trading/bank_sales_trading.sqlite",
+    "question": "What is the difference in average month-end balance between the month with the most and the month with the fewest customers having a positive balance in 2020?",
+    "evidence": ""
+  },
+  {
+    "id": "local269",
+    "dataset": "spider2.0",
+    "db_id": "oracle_sql",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/oracle_sql/oracle_sql.sqlite",
+    "question": "What is the average total quantity across all final packaging combinations, considering all items contained within each combination?",
+    "evidence": ""
+  },
+  {
+    "id": "local202",
+    "dataset": "spider2.0",
+    "db_id": "city_legislation",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/city_legislation/city_legislation.sqlite",
+    "question": "For alien data, how many of the top 10 states by alien population have a higher percentage of friendly aliens than hostile aliens, with an average alien age exceeding 200?",
+    "evidence": ""
+  },
+  {
+    "id": "local030",
+    "dataset": "spider2.0",
+    "db_id": "Brazilian_E_Commerce",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Brazilian_E_Commerce/Brazilian_E_Commerce.sqlite",
+    "question": "Can you find the average payments and order counts for the five cities with the lowest total payments from delivered orders?",
+    "evidence": ""
+  },
+  {
+    "id": "local008",
+    "dataset": "spider2.0",
+    "db_id": "Baseball",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Baseball/Baseball.sqlite",
+    "question": "I would like to know the given names of baseball players who have achieved the highest value of games played, runs, hits, and home runs, with their corresponding score values.",
+    "evidence": ""
+  },
+  {
+    "id": "local037",
+    "dataset": "spider2.0",
+    "db_id": "Brazilian_E_Commerce",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Brazilian_E_Commerce/Brazilian_E_Commerce.sqlite",
+    "question": "What are the top three product categories with the highest number of payments in single payment type, and how many payments were made in each category?",
+    "evidence": ""
+  },
+  {
+    "id": "local039",
+    "dataset": "spider2.0",
+    "db_id": "Pagila",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Pagila/Pagila.sqlite",
+    "question": "Please help me find the film category with the highest total rental hours in cities where the city's name either starts with \"A\" or contains a hyphen. ",
+    "evidence": ""
+  },
+  {
+    "id": "local270",
+    "dataset": "spider2.0",
+    "db_id": "oracle_sql",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/oracle_sql/oracle_sql.sqlite",
+    "question": "Which packaging containers include items in quantities greater than 500, considering all items contained within each container?",
+    "evidence": ""
+  },
+  {
+    "id": "local284",
+    "dataset": "spider2.0",
+    "db_id": "bank_sales_trading",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/bank_sales_trading/bank_sales_trading.sqlite",
+    "question": "Can you generate a summary of our items' loss rates? Include the average loss rate, and also break down the count of items that are below, above, and within one standard deviation from this average.",
+    "evidence": ""
+  },
+  {
+    "id": "local283",
+    "dataset": "spider2.0",
+    "db_id": "EU_soccer",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/EU_soccer/EU_soccer.sqlite",
+    "question": "Analyze our match data to identify the name, leagues, and countries of the champion team for each season. Include the total points accumulated by each team.",
+    "evidence": ""
+  },
+  {
+    "id": "local277",
+    "dataset": "spider2.0",
+    "db_id": "oracle_sql",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/oracle_sql/oracle_sql.sqlite",
+    "question": "What is the average forecasted annual sales for products 4160 and 7790 for 2018? Use a weighted regression model based on sales data from January 2016, focusing on the first 36 months, with sales adjusted for seasonality during time steps 7 to 30.",
+    "evidence": "# Explanation of Metrics\n\n## 1. Sales-to-CMA Ratio\n- **Definition**: This ratio compares actual sales to the centered moving average (CMA) of sales.\n- **Calculation**:\n  - **Centered Moving Average (CMA)**: The CMA is a smoothed value of sales calculated over a rolling 12-month period. It averages sales from the months before and after a given month, specifically using two overlapping windows (5 months before and 6 months after, and vice versa).\n  - **Sales-to-CMA Ratio**: The ratio is computed by dividing the actual sales amount for a month by its corresponding CMA value. A ratio greater than 2 indicates that the actual sales are more than twice the smoothed average for that period, suggesting significantly higher-than-average sales.\n\n## 2. 12-Month Overlapping Windows\n- **Definition**: A method to smooth sales data over time by averaging values in a specified window.\n- **Calculation**:\n  - **Window Size**: The window spans 12 months, with the specific approach involving overlapping periods. \n  - **First Window**: For a given month, this window includes 5 months before and 6 months after.\n  - **Second Window**: Another window includes 6 months before and 5 months after the given month.\n  - **Averaging**: Sales data is averaged over these two overlapping windows to compute the CMA. This method smooths out fluctuations by considering both the past and future sales in the calculation.\n\n## 3. Restriction to the 7th and 30th Months\n- **Definition**: A filter applied to focus calculations within a specific range of months.\n- **Calculation**:\n  - **Time Range**: Only the months between the 7th and 30th time steps (which correspond to specific periods) are considered for calculating the CMA and ratio.\n  - **Purpose**: This restriction is used to avoid edge effects in the data where the moving average might be less reliable (e.g., at the very beginning or end of the available data). By focusing on these months, the calculations are more stable and meaningful."
+  },
+  {
+    "id": "local073",
+    "dataset": "spider2.0",
+    "db_id": "modern_data",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/modern_data/modern_data.sqlite",
+    "question": "Let's generate a report for each pizza order that lists the pizza name followed by \": \", then all the ingredients in alphabetical order. If any ingredient is ordered more than once, indicate it with '2x' directly in front of the ingredient without a space.",
+    "evidence": ""
+  },
+  {
+    "id": "local279",
+    "dataset": "spider2.0",
+    "db_id": "oracle_sql",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/oracle_sql/oracle_sql.sqlite",
+    "question": "For each product, provide the product_id, month in 2019, and the smallest difference between its ending inventory and minimum required level, based on a monthly inventory adjustment model that includes restocking when levels fall below the minimum.",
+    "evidence": ""
+  },
+  {
+    "id": "local074",
+    "dataset": "spider2.0",
+    "db_id": "bank_sales_trading",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/bank_sales_trading/bank_sales_trading.sqlite",
+    "question": "Please generate a summary of the closing balances at the end of each month for each customer transactions, show the monthly changes and monthly cumulative bank account balances. Ensure that even if a customer has no account activity in a given month, the balance for that month is still included in the output.",
+    "evidence": ""
+  },
+  {
+    "id": "local020",
+    "dataset": "spider2.0",
+    "db_id": "IPL",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/IPL/IPL.sqlite",
+    "question": "Which bowler has the lowest bowling average per wicket taken?",
+    "evidence": ""
+  },
+  {
+    "id": "local212",
+    "dataset": "spider2.0",
+    "db_id": "delivery_center",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/delivery_center/delivery_center.sqlite",
+    "question": "Can you find 5 delivery drivers with the highest average number of daily deliveries?",
+    "evidence": ""
+  },
+  {
+    "id": "local018",
+    "dataset": "spider2.0",
+    "db_id": "California_Traffic_Collision",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/California_Traffic_Collision/California_Traffic_Collision.sqlite",
+    "question": "For the most common cause of traffic accidents in 2021, how much did its share (percentage in the annual roal incidents) decrease compared to 10 years earlier?",
+    "evidence": ""
+  },
+  {
+    "id": "local029",
+    "dataset": "spider2.0",
+    "db_id": "Brazilian_E_Commerce",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Brazilian_E_Commerce/Brazilian_E_Commerce.sqlite",
+    "question": "Please calculate the average payment value, city, and state for the top 3 customers with the most delivered orders.",
+    "evidence": ""
+  },
+  {
+    "id": "local081",
+    "dataset": "spider2.0",
+    "db_id": "northwind",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/northwind/northwind.sqlite",
+    "question": "How many customers were in each spending group in 1998, and what percentage of the total customer base does each group represent?",
+    "evidence": ""
+  },
+  {
+    "id": "local075",
+    "dataset": "spider2.0",
+    "db_id": "bank_sales_trading",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/bank_sales_trading/bank_sales_trading.sqlite",
+    "question": "Can you provide a breakdown of how many times each product was viewed, how many times they were added to the shopping cart, and how many times they were left in the cart without being purchased? Also, give me the count of actual purchases for each product. Ensure that products with a page id in (1, 2, 12, 13) are filtered out.",
+    "evidence": ""
+  },
+  {
+    "id": "local072",
+    "dataset": "spider2.0",
+    "db_id": "city_legislation",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/city_legislation/city_legislation.sqlite",
+    "question": "Identify the country with data inserted on nine different days in January 2022. Then, find the longest consecutive period with data insertions for this country during January 2022, and calculate the proportion of entries that are from its capital city within this longest consecutive insertion period.",
+    "evidence": ""
+  },
+  {
+    "id": "local285",
+    "dataset": "spider2.0",
+    "db_id": "bank_sales_trading",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/bank_sales_trading/bank_sales_trading.sqlite",
+    "question": "For veg whsle data, can you analyze our financial performance over the years 2020 to 2023? I need insights into the average wholesale price, maximum wholesale price, minimum wholesale price, wholesale price difference, total wholesale price, total selling price, average loss rate, total loss, and profit for each category within each year. Round all calculated values to two decimal places.",
+    "evidence": ""
+  },
+  {
+    "id": "local017",
+    "dataset": "spider2.0",
+    "db_id": "California_Traffic_Collision",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/California_Traffic_Collision/California_Traffic_Collision.sqlite",
+    "question": "In which year were the two most common causes of traffic accidents different from those in other years?",
+    "evidence": ""
+  },
+  {
+    "id": "local028",
+    "dataset": "spider2.0",
+    "db_id": "Brazilian_E_Commerce",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Brazilian_E_Commerce/Brazilian_E_Commerce.sqlite",
+    "question": "Could you generate a report that shows the number of delivered orders for each month in the years 2016, 2017, and 2018? Each column represents a year, and each row represents a month",
+    "evidence": ""
+  },
+  {
+    "id": "local010",
+    "dataset": "spider2.0",
+    "db_id": "Airlines",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Airlines/Airlines.sqlite",
+    "question": "Distribute all the unique city pairs into the distance ranges 0, 1000, 2000, 3000, 4000, 5000, and 6000+, based on their average distance of all routes between them. Then how many pairs are there in the distance range with the fewest unique city paires?",
+    "evidence": "# Flight Route Distance Calculation\n\n## Introduction\n\nThis document describes the method used to calculate the distance between two cities for flight routes. The calculation is based on the Haversine formula, which is commonly used to find the shortest distance between two points on a sphere given their latitude and longitude. This method is especially useful for determining flight distances between airports located in different cities around the world.\n\n## City and Coordinate Extraction\n\nFor each flight, the following data is obtained:\n\n- **Departure city** (referred to as `from_city`) and its geographical coordinates (longitude and latitude).\n- **Arrival city** (referred to as `to_city`) and its geographical coordinates (longitude and latitude).\n\nThe coordinates are extracted as decimal values, with longitude and latitude represented in degrees. This ensures that trigonometric operations can be applied during the distance calculation.\n\n## Haversine Formula\n\nThe Haversine formula is used to calculate the great-circle distance between two points on a sphere using their latitude and longitude. The formula is given as:\n\n\\[\nd = 2r \\cdot \\arcsin\\left(\\sqrt{\\sin^2\\left(\\frac{\\Delta \\phi}{2}\\right) + \\cos(\\phi_1) \\cdot \\cos(\\phi_2) \\cdot \\sin^2\\left(\\frac{\\Delta \\lambda}{2}\\right)}\\right)\n\\]\n\nWhere:\n\n- \\( d \\) is the distance between the two points (in kilometers).\n- \\( r \\) is the radius of the Earth (approximately 6371 km).\n- \\( \\phi_1 \\) and \\( \\phi_2 \\) are the latitudes of the departure and arrival points, respectively, in radians.\n- \\( \\Delta \\phi = \\phi_2 - \\phi_1 \\) is the difference in latitudes.\n- \\( \\lambda_1 \\) and \\( \\lambda_2 \\) are the longitudes of the departure and arrival points, respectively, in radians.\n- \\( \\Delta \\lambda = \\lambda_2 - \\lambda_1 \\) is the difference in longitudes.\n\n### Conversion to Radians\n\nSince the input coordinates are in degrees, they must be converted to radians before applying the Haversine formula. This conversion is done using the formula:\n\n\\[\n\\text{radians} = \\text{degrees} \\times \\frac{\\pi}{180}\n\\]\n\n## Symmetry of Routes\n\nTo identify unique flight routes between two cities, we standardize the order of cities in each route. Specifically, we ensure that the lexicographically smaller city name is always listed as the first city (`city1`), and the larger city is listed as the second city (`city2`). This ensures that a flight from City A to City B is treated the same as a flight from City B to City A.\n\n## Average Route Distance\n\nOnce the distances for all flights between two cities are computed, the average distance for each city pair is calculated by summing the distances and dividing by the total number of flights between those cities:\n\n\\[\n\\text{Average Distance} = \\frac{\\sum \\text{Flight Distances}}{\\text{Number of Flights}}\n\\]\n\n## Conclusion\n\nThis method of flight route distance calculation provides a reliable way to determine the great-circle distance between cities based on the coordinates of their respective airports. The use of the Haversine formula ensures accurate results for distances on the Earth's surface, making it ideal for aviation and travel analysis."
+  },
+  {
+    "id": "local026",
+    "dataset": "spider2.0",
+    "db_id": "IPL",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/IPL/IPL.sqlite",
+    "question": "Please help me find the top 3 bowlers who conceded the maximum runs in a single over, along with the corresponding matches.",
+    "evidence": ""
+  },
+  {
+    "id": "local019",
+    "dataset": "spider2.0",
+    "db_id": "WWE",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/WWE/WWE.sqlite",
+    "question": "For the NXT title that had the shortest match (excluding titles with \"title change\"), what were the names of the two wrestlers involved?",
+    "evidence": ""
+  },
+  {
+    "id": "local021",
+    "dataset": "spider2.0",
+    "db_id": "IPL",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/IPL/IPL.sqlite",
+    "question": "Could you show me the average total score of strikers who have scored more than 50 runs in at least one match?",
+    "evidence": ""
+  },
+  {
+    "id": "local198",
+    "dataset": "spider2.0",
+    "db_id": "chinook",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/chinook/chinook.sqlite",
+    "question": "Using the sales data, what is the median value of total sales made in countries where the number of customers is greater than 4?",
+    "evidence": ""
+  },
+  {
+    "id": "local196",
+    "dataset": "spider2.0",
+    "db_id": "sqlite-sakila",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/sqlite-sakila/sqlite-sakila.sqlite",
+    "question": "For the ratings of the first movie rented by customers, please provide the average total spend and the average number of subsequent rentals for each rating category.",
+    "evidence": ""
+  },
+  {
+    "id": "local131",
+    "dataset": "spider2.0",
+    "db_id": "EntertainmentAgency",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/EntertainmentAgency/EntertainmentAgency.sqlite",
+    "question": "Could you list each musical style with the number of times it appears as a 1st, 2nd, or 3rd preference in a single row per style?",
+    "evidence": ""
+  },
+  {
+    "id": "local100",
+    "dataset": "spider2.0",
+    "db_id": "Db-IMDB",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Db-IMDB/Db-IMDB.sqlite",
+    "question": "Can you investigate our database and find out how many actors have a 'Shahrukh number' of 2? This means they acted in a film with someone who acted with Shahrukh Khan, but not directly with him.",
+    "evidence": ""
+  },
+  {
+    "id": "local335",
+    "dataset": "spider2.0",
+    "db_id": "f1",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/f1/f1.sqlite",
+    "question": "Which five constructors have had the most seasons in the 21st century where their drivers scored the fewest points in a Formula 1 season?",
+    "evidence": ""
+  },
+  {
+    "id": "local356",
+    "dataset": "spider2.0",
+    "db_id": "f1",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/f1/f1.sqlite",
+    "question": "Can you tell me the full names of drivers who have been overtaken more times than they have performed overtakes?",
+    "evidence": ""
+  },
+  {
+    "id": "local163",
+    "dataset": "spider2.0",
+    "db_id": "education_business",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/education_business/education_business.sqlite",
+    "question": "Which university faculty members' salaries are closest to the average salary for their respective ranks? Please provide the ranks, first names, last names, and salaries.university",
+    "evidence": ""
+  },
+  {
+    "id": "local197",
+    "dataset": "spider2.0",
+    "db_id": "sqlite-sakila",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/sqlite-sakila/sqlite-sakila.sqlite",
+    "question": "Can you determine which of our top 10 paying customers had the highest payment difference in any given month? I'd like to know the highest payment difference for this customer, with the result rounded to two decimal places.",
+    "evidence": ""
+  },
+  {
+    "id": "local358",
+    "dataset": "spider2.0",
+    "db_id": "log",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/log/log.sqlite",
+    "question": "How many users are there in each age category (20s, 30s, 40s, 50s, and others)?",
+    "evidence": ""
+  },
+  {
+    "id": "local199",
+    "dataset": "spider2.0",
+    "db_id": "sqlite-sakila",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/sqlite-sakila/sqlite-sakila.sqlite",
+    "question": "Can you identify the year and month with the highest rental orders created by the store's staff for each store? Please list the store ID, the year, the month, and the total rentals for those dates.",
+    "evidence": ""
+  },
+  {
+    "id": "local152",
+    "dataset": "spider2.0",
+    "db_id": "imdb_movies",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/imdb_movies/imdb_movies.sqlite",
+    "question": "Can you provide the top 9 directors by movie count, including their ID, name, number of movies, average inter-movie duration (rounded to the nearest integer), average rating (rounded to 2 decimals), total votes, minimum and maximum ratings, and total movie duration? Sort the output first by movie count in descending order and then by total movie duration in descending order.",
+    "evidence": ""
+  },
+  {
+    "id": "local360",
+    "dataset": "spider2.0",
+    "db_id": "log",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/log/log.sqlite",
+    "question": "Identify the sessions with the fewest events lacking both '/detail' clicks and '/complete' conversions, considering only non-empty search types. If multiple sessions share the lowest count, include all of them. For each session, display the associated paths and search types.",
+    "evidence": ""
+  },
+  {
+    "id": "local302",
+    "dataset": "spider2.0",
+    "db_id": "bank_sales_trading",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/bank_sales_trading/bank_sales_trading.sqlite",
+    "question": "Analyze the average sales performance impact 12 weeks before and after June 15, 2020, across various attributes like regions, platforms, age bands, demographics, and customer types. Identify and provide the attribute with the highest negative impact on sales, detailing the average percentage change in sales for that attribute.",
+    "evidence": ""
+  },
+  {
+    "id": "local130",
+    "dataset": "spider2.0",
+    "db_id": "school_scheduling",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/school_scheduling/school_scheduling.sqlite",
+    "question": "Could you provide a list of last names for all students who completed English courses, including their quintile ranks based on their grades, and sorted from the highest to the lowest grade quintile?",
+    "evidence": ""
+  },
+  {
+    "id": "local311",
+    "dataset": "spider2.0",
+    "db_id": "f1",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/f1/f1.sqlite",
+    "question": "Which constructors had the top 3 combined points from their best driver and team, and in which years did they achieve them?",
+    "evidence": ""
+  },
+  {
+    "id": "local329",
+    "dataset": "spider2.0",
+    "db_id": "log",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/log/log.sqlite",
+    "question": "How many unique sessions visited the /regist/input page and then the /regist/confirm page, in that order?",
+    "evidence": ""
+  },
+  {
+    "id": "local170",
+    "dataset": "spider2.0",
+    "db_id": "city_legislation",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/city_legislation/city_legislation.sqlite",
+    "question": "Which states have a consistently non-zero retention rate for legislators of each gender across every two-year interval (0, 2, 4, 6, 8, 10) during the first 10 years after they begin serving? Please provide state name abbreviation.",
+    "evidence": ""
+  },
+  {
+    "id": "local141",
+    "dataset": "spider2.0",
+    "db_id": "AdventureWorks",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/AdventureWorks/AdventureWorks.sqlite",
+    "question": "How did each salesperson's annual total sales compare to their annual sales quota? Provide the difference between their total sales and the quota for each year, organized by salesperson and year.",
+    "evidence": ""
+  },
+  {
+    "id": "local310",
+    "dataset": "spider2.0",
+    "db_id": "f1",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/f1/f1.sqlite",
+    "question": "List the three years where the sum of the highest points achieved by any driver and any constructor was the lowest",
+    "evidence": ""
+  },
+  {
+    "id": "local114",
+    "dataset": "spider2.0",
+    "db_id": "education_business",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/education_business/education_business.sqlite",
+    "question": "Provide a detailed web sales report for each region, including the number of orders, total sales amount, and the name and sales amount of the top-selling sales representative in each region",
+    "evidence": ""
+  },
+  {
+    "id": "local344",
+    "dataset": "spider2.0",
+    "db_id": "f1",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/f1/f1.sqlite",
+    "question": "How many times has each type of overtake occurred in Formula 1?",
+    "evidence": "# Overtake Label Classification\n\nIn racing, overtakes are categorized into different states based on specific conditions, reflecting the circumstances in which the overtaking occurred. Below are the classifications and their detailed explanations:\n\n## 1. R (Retirement) - Overtake during Retirement\nAn overtake is labeled as **R (Retirement)** if the overtaken driver retired on the same lap as the overtake. This indicates that the overtake occurred just before or during the overtaken driver's retirement, meaning they could no longer continue the race after that lap.\n\n## 2. P (Pit) - Overtake related to Pit Stops\nAn overtake is classified as **P (Pit)** under two scenarios:\n   - **Pit Entry**: If the overtake occurred while the overtaken driver was entering the pit lane, and the driver pitted on the same lap, it indicates that the overtaking happened due to the overtaken driver reducing speed to enter the pit lane.\n   - **Pit Exit**: If the overtake occurred as the overtaken driver was exiting the pit lane, especially if the driver pitted on the previous lap and the time gap between the drivers was less than a typical pit stop duration. This suggests that the overtake happened while the overtaken driver was potentially at a lower speed, rejoining the race track from the pit lane.\n\n## 3. S (Start) - Overtake at Race Start\nIf the overtake took place on the first lap of the race, and the two drivers were within two grid positions of each other at the start, the overtake is classified as **S (Start)**. This classification indicates that the overtake was part of the initial racing shuffle during the race's launch phase, where close position changes are common.\n\n## 4. T (Track) - Overtake under Normal Racing Conditions\nIf none of the above conditions apply, the overtake is categorized as **T (Track)**, meaning it occurred during normal racing conditions on the track, without any external factors like pit stops or retirements influencing the outcome. This is the default classification for overtakes that happen during regular competition.\n\n---\n\nThese classifications help to identify and record the context of each overtake with clarity, ensuring accurate representation of race dynamics."
+  },
+  {
+    "id": "local171",
+    "dataset": "spider2.0",
+    "db_id": "city_legislation",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/city_legislation/city_legislation.sqlite",
+    "question": "What is the number of male legislators from Louisiana who have served more than 30 years since their first term, grouped by their years of service, for periods less than 50 years?",
+    "evidence": ""
+  },
+  {
+    "id": "local003",
+    "dataset": "spider2.0",
+    "db_id": "E_commerce",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/E_commerce/E_commerce.sqlite",
+    "question": "According to the RFM definition document, how much is the average sales per order for each customer within distinct RFM segments, considering only 'delivered' orders? Please rank the customers into segments to analyze differences in average sales across these segments",
+    "evidence": "# Introduction to the RFM Model\n\nThe RFM (Recency, Frequency, Monetary) model segments and scores customers based on three key dimensions:\n\nRecency: The time since the customer's last purchase. Customers who made a purchase more recently are more likely to buy again.\n\nFrequency: The number of purchases made by the customer within a given period. Customers with higher purchase frequency are generally more valuable.\n\nMonetary: The total amount of money spent by the customer. Customers who spend more are typically considered more valuable.\n\nUsing these three dimensions, the SQL assigns each customer a score based on their historical order data and classifies them into different customer segments (RFM Buckets).\n\nBy taking the values for each customer, bucketing them to produce a score from 1 (lowest) to 5 (highest) and then concatenating all three scores together you get an easy way to divide-up your customers into segments (or “RFM cells”; high-spending new purchasers (514, 5 for recency, 1 for frequency and 4 for monetary value), almost-lost but previously loyal customers (153, 1 for recency, 5 for frequency and 3 for monetary value) and so on.\n\nOne of the most popular ways to visualize your customer RFM segments is by using a grid such as the one below, with each segment labelled and sized proportionate to the volume of customers each contains.\n\n# RFM Segmentation Calculation\n\n\nRFM analysis is particularly useful for sales and customer teams needing to focus their limited time and money on those customers for whom a change in behavior — from lapsed to active, or first-time to repeat shopper for example — would have the most impact on your bottom line.\n\nFor example, by focusing retention efforts on customers who used to be frequent, loyal and high-value purchasers (RFM segment 355) the revenue upside is obviously much greater than if they managed to retain customers who were previously infrequent low-value purchasers (RFM segment 132).\n\nSimilarly, there’s little point in incentivising customers who are already your most loyal, frequent and high-spending customers (RFM segment 555) when spending those incentives on customers who’ve just made their first purchase and have the potential to also become loyal and valuable repeat customers (RFM segment 514, for example)\n\nBuilding an RFM model is often one of the first projects our clients’ data teams ask us to help deliver as the concept is straightforward, the data required has usually just been centralized and the output is immediately actionable by customer and marketing teams keen to focus their time on customer activity that has the greatest potential to retain or increase revenue.\n\nWe’ve created an RFM model using the project timesheets and invoicing data we centralise in our Google BigQuery data warehouse and used it to create the RFM analysis dashboard shown in the screenshot at the start of this blog; in the rest of this blog I’ll walk through how we build the model using dbt and LookML and used the visualization features in Looker to help analyze and make the data actionable.\n\nFor the purposes of the RFM model we created for our consulting business, we defined our Recency, Frequency and Monetary Value measures as:\n\nRecency: the number of months since the last invoice raised for a customer\n\nFrequency : the number of invoices raised for the customer in the 12 months leading-up to their last invoice\n\nMonetary Value : the total value of invoices raised for the customer over the 12 months leading-up to their last invoice\n\nThe RFM (Recency, Frequency, Monetary) model categorizes customers based on three dimensions: **Recency**, **Frequency**, and **Monetary**. This helps in identifying high-value customers, those at risk of leaving, and others who require attention. Below is a detailed explanation of how customers are grouped based on these three factors.\n\n\n## RFM Segmentation Logic\n\nCustomers are assigned to specific segments (RFM Buckets) based on a combination of their Recency, Frequency, and Monetary scores. The segmentation logic is as follows:\n\n- **Champions**: Customers who have made a recent purchase, with high frequency and high monetary value. These are considered the most valuable customers.\n  - Criteria: Recency = 1 and Frequency + Monetary score between 1 and 4.\n\n- **Can't Lose Them**: Previously frequent and high-spending customers who have not made a recent purchase. These customers are at risk of leaving and need attention.\n  - Criteria: Recency = 4 or 5 and Frequency + Monetary score between 1 and 2.\n\n- **Hibernating**: Customers whose last purchase was a while ago, with low to moderate frequency and spending. These customers might have lost interest in the products.\n  - Criteria: Recency = 4 or 5 and Frequency + Monetary score between 3 and 6.\n\n- **Lost**: Customers who have not purchased in a long time and have low frequency and monetary value. These customers are likely lost.\n  - Criteria: Recency = 4 or 5 and Frequency + Monetary score between 7 and 10.\n\n- **Loyal Customers**: Customers who are frequent buyers with decent spending levels, and they have made a purchase relatively recently. These customers are likely to be very loyal.\n  - Criteria: Recency = 2 or 3 and Frequency + Monetary score between 1 and 4.\n\n- **Needs Attention**: Customers whose purchase frequency and spending are moderate. They haven't bought very recently, but they could be incentivized to become more active.\n  - Criteria: Recency = 3 and Frequency + Monetary score between 5 and 6.\n\n- **Recent Users**: Customers who made a purchase recently, but their frequency and spending are moderate. These are relatively new or inconsistent buyers.\n  - Criteria: Recency = 1 and Frequency + Monetary score between 7 and 8.\n\n- **Potential Loyalists**: Customers who show potential to become loyal customers. They have good frequency and monetary scores, and they have made recent purchases. With the right engagement, they could become loyal customers.\n  - Criteria:\n    - Recency = 1 and Frequency + Monetary score between 5 and 6.\n    - OR Recency = 2 and Frequency + Monetary score between 5 and 8.\n\n- **Price Sensitive**: Customers who have made recent purchases but tend to spend less, indicating they may be more sensitive to price.\n  - Criteria: Recency = 1 and Frequency + Monetary score between 9 and 10.\n\n- **Promising**: These customers exhibit high potential with decent frequency and monetary scores, and they could become more valuable over time.\n  - Criteria: Recency = 2 and Frequency + Monetary score between 9 and 10.\n\n- **About to Sleep**: Customers whose frequency and spending are low, and their last purchase was some time ago. These customers are likely to become inactive.\n  - Criteria: Recency = 3 and Frequency + Monetary score between 7 and 10.\n\n## Summary\n\nThis segmentation logic groups customers based on their behavior in terms of when they last purchased (Recency), how often they purchase (Frequency), and how much they spend (Monetary). By understanding which group a customer belongs to, organizations can tailor marketing strategies to engage the right audience more effectively, improving customer retention and maximizing value."
+  },
+  {
+    "id": "local209",
+    "dataset": "spider2.0",
+    "db_id": "delivery_center",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/delivery_center/delivery_center.sqlite",
+    "question": "What is the ratio of completed orders to total orders for the store with the highest number of orders?",
+    "evidence": ""
+  },
+  {
+    "id": "local004",
+    "dataset": "spider2.0",
+    "db_id": "E_commerce",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/E_commerce/E_commerce.sqlite",
+    "question": "Could you tell me the number of orders, average payment per order and customer lifespan in weeks of the 3 custumers with the highest average payment per order. Attention: I want the lifespan in float number if it's longer than one week, otherwise set it to be 1.0.",
+    "evidence": ""
+  },
+  {
+    "id": "local032",
+    "dataset": "spider2.0",
+    "db_id": "Brazilian_E_Commerce",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Brazilian_E_Commerce/Brazilian_E_Commerce.sqlite",
+    "question": "Could you help me find the sellers respectively with the highest number of distinct customers, highest profit, highest number of distinct orders, and most 5-star ratings, in delivered orders, along with their corresponding values? ",
+    "evidence": ""
+  },
+  {
+    "id": "local035",
+    "dataset": "spider2.0",
+    "db_id": "Brazilian_E_Commerce",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Brazilian_E_Commerce/Brazilian_E_Commerce.sqlite",
+    "question": "Please help me find two adjacent cities with the greatest distance between them.",
+    "evidence": "The distance between two cities can be calculated using the **Spherical Law of Cosines**. This method estimates the distance based on the geographical coordinates (latitude and longitude) of the cities. Below is a detailed explanation of the calculation process, including the relevant formula.\n\nThe distance $d$ between two cities is calculated using the following formula:\n\n$$\nd = 6371 \\times \\arccos \\left( \\cos(\\text{lat}_1) \\times \\cos(\\text{lat}_2) \\times \\cos(\\text{lon}_2 - \\text{lon}_1) + \\sin(\\text{lat}_1) \\times \\sin(\\text{lat}_2) \\right)\n$$\n\nWhere:\n- $\\text{lat}_1$ and $\\text{lat}_2$ are the latitudes of the first and second cities in **radians**.\n- $\\text{lon}_1$ and $\\text{lon}_2$ are the longitudes of the first and second cities in **radians**.\n- `6371` is the Earth's average radius in kilometers."
+  },
+  {
+    "id": "local253",
+    "dataset": "spider2.0",
+    "db_id": "education_business",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/education_business/education_business.sqlite",
+    "question": "For the salary dataset, create a detailed SQL report that compares the top 5 companies by average salary in Mumbai, Pune, New Delhi, and Hyderabad to the national average salary. The report should include the following columns: Location, Company Name, Average Salary in State, and Average Salary in Country.",
+    "evidence": ""
+  },
+  {
+    "id": "local061",
+    "dataset": "spider2.0",
+    "db_id": "complex_oracle",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/complex_oracle/complex_oracle.sqlite",
+    "question": "What is the average monthly projected sales in USD for France in 2021? Please use data from 2019 and 2020 for projection. Ensure all values are converted to USD based on the 2021 exchange rates.",
+    "evidence": "## Projection Calculation Method\n\n### Steps for Projection Calculation\n\n1. **Aggregate Historical Sales Data**\n\n   - **Data Collection**: Gather sales data for products sold in France, including sales amounts each month for the years 2019, 2020, and 2021.\n   - **Summarize Sales**: Sum up the sales amounts for each product, country, month, and year.\n\n2. **Calculate Average Sales**\n\n   - **Monthly Averages**: Compute the average sales amount for each product and month across all available months to establish a baseline of typical sales.\n\n3. **Project Sales for 2021**\n\n   - **Identify Changes**: Determine how sales changed from 2019 to 2020 for each product and month. Calculate the percentage change in sales from 2019 to 2020.\n   - **Apply Changes**: Use this percentage change to estimate the sales for each month in 2021.\n\n   **Projection Formula**:\n   - For 2021:\n     - Calculate the difference in sales between 2020 and 2019.\n     - Compute the percentage change relative to 2019 sales.\n     - Apply this percentage change to the 2020 sales to estimate 2021 sales.\n     - The formula used in the SQL query is:\n\n       ```plaintext\n       (((Sales in 2020 - Sales in 2019) / Sales in 2019) * Sales in 2020) + Sales in 2020\n       ```\n\n     - This formula calculates the projected sales for 2021 based on the observed trend from 2019 to 2020.\n\n   - For other years (not 2021):\n     - Use the average sales value calculated for each month.\n\n4. **Adjust for Currency Conversion**\n\n   - **Conversion Rates**: Convert the projected sales figures into USD using monthly conversion rates.\n   - **Currency Adjustment**: Multiply the projected sales figures by the conversion rates to adjust to USD. If specific rates are not available, use a default rate of 1.\n\n5. **Calculate Monthly Averages in USD**\n\n   - **Monthly Projections**: Compute the average projected sales for each month in 2021, adjusting for currency conversion. Round the results to two decimal places.\n\n6. **Compile Results**\n\n   - **Organize Data**: Arrange the projected sales figures in a report, showing the estimated sales for each month in USD.\n\n### Summary\n\nThe projection calculation involves analyzing historical sales data from 2019 and 2020 to determine trends, applying these trends to estimate sales for 2021, and adjusting for currency differences. The result is a forecast of monthly sales in USD for 2021."
+  },
+  {
+    "id": "local298",
+    "dataset": "spider2.0",
+    "db_id": "bank_sales_trading",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/bank_sales_trading/bank_sales_trading.sqlite",
+    "question": "For each month, calculate the total balance from all users for the previous month (measured as of the 1st of each month), replacing any negative balances with zero. Ensure that data from the first month is used only as a baseline for calculating previous total balance, and exclude it from the final output. Sort the results in ascending order by month. ",
+    "evidence": ""
+  },
+  {
+    "id": "local066",
+    "dataset": "spider2.0",
+    "db_id": "modern_data",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/modern_data/modern_data.sqlite",
+    "question": "Based on our customer pizza order information, summarize the total quantity of each ingredient used in the pizzas we delivered. Output the name and quantity for each ingredient.",
+    "evidence": ""
+  },
+  {
+    "id": "local059",
+    "dataset": "spider2.0",
+    "db_id": "education_business",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/education_business/education_business.sqlite",
+    "question": "For the calendar year 2021, what is the overall average quantity sold of the top three best-selling hardware products (by total quantity sold) in each division?",
+    "evidence": ""
+  },
+  {
+    "id": "local050",
+    "dataset": "spider2.0",
+    "db_id": "complex_oracle",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/complex_oracle/complex_oracle.sqlite",
+    "question": "What is the median value from average monthly projected sales in USD for France in 2021? Please use data from 2019 and 2020 for projection.",
+    "evidence": "## Projection Calculation Method\n\n### Steps for Projection Calculation\n\n1. **Aggregate Historical Sales Data**\n\n   - **Data Collection**: Gather sales data for products sold in France, including sales amounts each month for the years 2019, 2020, and 2021.\n   - **Summarize Sales**: Sum up the sales amounts for each product, country, month, and year.\n\n2. **Calculate Average Sales**\n\n   - **Monthly Averages**: Compute the average sales amount for each product and month across all available months to establish a baseline of typical sales.\n\n3. **Project Sales for 2021**\n\n   - **Identify Changes**: Determine how sales changed from 2019 to 2020 for each product and month. Calculate the percentage change in sales from 2019 to 2020.\n   - **Apply Changes**: Use this percentage change to estimate the sales for each month in 2021.\n\n   **Projection Formula**:\n   - For 2021:\n     - Calculate the difference in sales between 2020 and 2019.\n     - Compute the percentage change relative to 2019 sales.\n     - Apply this percentage change to the 2020 sales to estimate 2021 sales.\n     - The formula used in the SQL query is:\n\n       ```plaintext\n       (((Sales in 2020 - Sales in 2019) / Sales in 2019) * Sales in 2020) + Sales in 2020\n       ```\n\n     - This formula calculates the projected sales for 2021 based on the observed trend from 2019 to 2020.\n\n   - For other years (not 2021):\n     - Use the average sales value calculated for each month.\n\n4. **Adjust for Currency Conversion**\n\n   - **Conversion Rates**: Convert the projected sales figures into USD using monthly conversion rates.\n   - **Currency Adjustment**: Multiply the projected sales figures by the conversion rates to adjust to USD. If specific rates are not available, use a default rate of 1.\n\n5. **Calculate Monthly Averages in USD**\n\n   - **Monthly Projections**: Compute the average projected sales for each month in 2021, adjusting for currency conversion. Round the results to two decimal places.\n\n6. **Compile Results**\n\n   - **Organize Data**: Arrange the projected sales figures in a report, showing the estimated sales for each month in USD.\n\n### Summary\n\nThe projection calculation involves analyzing historical sales data from 2019 and 2020 to determine trends, applying these trends to estimate sales for 2021, and adjusting for currency differences. The result is a forecast of monthly sales in USD for 2021."
+  },
+  {
+    "id": "local262",
+    "dataset": "spider2.0",
+    "db_id": "stacking",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/stacking/stacking.sqlite",
+    "question": "Which models have more instances where traditional models perform worse than the Stack model than the total times these models were evaluated across all steps and versions?",
+    "evidence": ""
+  },
+  {
+    "id": "local068",
+    "dataset": "spider2.0",
+    "db_id": "city_legislation",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/city_legislation/city_legislation.sqlite",
+    "question": "Calculate the number of new cities inserted each April, May, and June, along with the year-over-year growth percentage for each month from 2021-2023. List the year, month, the total number of cities added, the running cumulative total, and the year-over-year growth percentage (including \"%\") for both the monthly total and the running total. Ensure that 2021 data is used only as a baseline for calculating growth rates, and exclude it from the final output.",
+    "evidence": ""
+  },
+  {
+    "id": "local034",
+    "dataset": "spider2.0",
+    "db_id": "Brazilian_E_Commerce",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Brazilian_E_Commerce/Brazilian_E_Commerce.sqlite",
+    "question": "Could you help me calculate the average of the total payment count for the most preferred payment method in each product category?",
+    "evidence": ""
+  },
+  {
+    "id": "local201",
+    "dataset": "spider2.0",
+    "db_id": "modern_data",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/modern_data/modern_data.sqlite",
+    "question": "Identify the first 10 words (of length 4 to 5, starting with 'r') sorted alphabetically that have at least one anagram. Provide the count of anagrams for each word.",
+    "evidence": ""
+  },
+  {
+    "id": "local230",
+    "dataset": "spider2.0",
+    "db_id": "imdb_movies",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/imdb_movies/imdb_movies.sqlite",
+    "question": "Determine the top three genres with the most movies rated above 8, and then identify the top four directors who have directed the most films rated above 8 within those genres. List these directors and their respective movie counts.",
+    "evidence": ""
+  },
+  {
+    "id": "local002",
+    "dataset": "spider2.0",
+    "db_id": "E_commerce",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/E_commerce/E_commerce.sqlite",
+    "question": "Can you calculate the 5-day symmetric moving average of predicted toy sales for December 5 to 8, 2018, using daily sales data from January 1, 2017, to August 29, 2018, with a simple linear regression model? Provide the total of the moving averages for those four days.",
+    "evidence": ""
+  },
+  {
+    "id": "local056",
+    "dataset": "spider2.0",
+    "db_id": "sqlite-sakila",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/sqlite-sakila/sqlite-sakila.sqlite",
+    "question": "Which customer has the highest average monthly change in payment amounts? Provide the customer's full name.",
+    "evidence": ""
+  },
+  {
+    "id": "local264",
+    "dataset": "spider2.0",
+    "db_id": "stacking",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/stacking/stacking.sqlite",
+    "question": "Which model category (L1_model) appears the most frequently across all steps and versions when comparing traditional models to the Stack model, and what is the total count of its occurrences?",
+    "evidence": ""
+  },
+  {
+    "id": "local297",
+    "dataset": "spider2.0",
+    "db_id": "bank_sales_trading",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/bank_sales_trading/bank_sales_trading.sqlite",
+    "question": "I'd like to know the percentage of users whose closing balances showed a growth rate of more than 5% in the most recent month (measured as of the 1st of each month). If the previous month's balance is zero, calculate the growth rate by multiplying the current balance by 100.",
+    "evidence": ""
+  },
+  {
+    "id": "local263",
+    "dataset": "spider2.0",
+    "db_id": "stacking",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/stacking/stacking.sqlite",
+    "question": "Which L1_model has the highest occurrence for each status ('strong,' where the maximum test score for non-'Stack' models is less than the 'Stack' score, and 'soft,' where it equals the 'Stack' score), and how many times does it occur?",
+    "evidence": ""
+  },
+  {
+    "id": "local067",
+    "dataset": "spider2.0",
+    "db_id": "complex_oracle",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/complex_oracle/complex_oracle.sqlite",
+    "question": "Can you provide the highest and lowest profits for Italian customers segmented into ten evenly divided tiers based on their December 2021 sales profits?",
+    "evidence": ""
+  },
+  {
+    "id": "local058",
+    "dataset": "spider2.0",
+    "db_id": "education_business",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/education_business/education_business.sqlite",
+    "question": "Can you provide a list of hardware product segments along with their unique product counts for 2020 in the output, ordered by the highest percentage increase in unique fact sales products from 2020 to 2021?",
+    "evidence": ""
+  },
+  {
+    "id": "local060",
+    "dataset": "spider2.0",
+    "db_id": "complex_oracle",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/complex_oracle/complex_oracle.sqlite",
+    "question": "What is the change in each product's share of total sales in the top 20% of products (by sales), between Q4 of 2019 and 2020, in the US? Include only products with no promotions in Q4 2019 or Q4 2020, and provide results in decreasing order of the change in sales share.",
+    "evidence": ""
+  },
+  {
+    "id": "local299",
+    "dataset": "spider2.0",
+    "db_id": "bank_sales_trading",
+    "db_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/bank_sales_trading/bank_sales_trading.sqlite",
+    "question": "Could you calculate each user's average balance over the past 30 days, computed daily? Then, for each month (based on the 1st of each month), find the highest of these daily averages for each user. Add up these maximum values across all users for each month as the final result. Please use the first month as a baseline for previous balances and exclude it from the output.",
+    "evidence": ""
+  }
+]

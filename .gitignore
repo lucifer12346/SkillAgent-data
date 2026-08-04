@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.log
+runs/
+output/
+.DS_Store
+SkillAgent_data_with_db_*.zip
+SkillAgent_data_with_db_*.zip.part*

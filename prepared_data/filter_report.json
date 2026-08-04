@@ -1,0 +1,77 @@
+{
+  "source_data_dir": "/public/home/yaozhiming/yzm/Text2SQL/SkillAgent/runs/run_20260730_113510_filtering_data/data",
+  "generated_at": "2026-07-30T12:05:34.520040+08:00",
+  "mode": "write",
+  "datasets": {
+    "train": {
+      "original": 1000,
+      "kept": 987,
+      "removed": 13,
+      "reason_counts": {
+        "curated_semantic_conflict": 13
+      },
+      "review_candidate_count": 44,
+      "review_reason_counts": {
+        "evidence_gold_literal_conflict": 44
+      },
+      "examples": [],
+      "note": null
+    },
+    "val": {
+      "original": 200,
+      "kept": 193,
+      "removed": 7,
+      "reason_counts": {
+        "gold_all_null_result": 4,
+        "gold_execution_error": 2,
+        "gold_empty_result": 1
+      },
+      "review_candidate_count": 0,
+      "review_reason_counts": {},
+      "examples": [],
+      "note": null
+    },
+    "bird": {
+      "original": 1534,
+      "kept": 1521,
+      "removed": 13,
+      "reason_counts": {
+        "curated_semantic_conflict": 8,
+        "gold_all_null_result": 3,
+        "gold_execution_error": 2
+      },
+      "review_candidate_count": 42,
+      "review_reason_counts": {
+        "evidence_gold_literal_conflict": 42
+      },
+      "examples": [],
+      "note": null
+    },
+    "ehrsql": {
+      "original": 1008,
+      "kept": 744,
+      "removed": 264,
+      "reason_counts": {
+        "gold_all_null_result": 98,
+        "unsupported_sqlite_strftime_y": 198
+      },
+      "review_candidate_count": 0,
+      "review_reason_counts": {},
+      "examples": [],
+      "note": null
+    },
+    "spider2.0": {
+      "original": 135,
+      "kept": 135,
+      "removed": 0,
+      "reason_counts": {},
+      "review_candidate_count": 0,
+      "review_reason_counts": {},
+      "examples": [],
+      "note": "No gold SQL: retained unless another high-confidence rule applies."
+    }
+  },
+  "total_removed": 297,
+  "total_review_candidates": 86,
+  "output_data_dir": "/public/home/yaozhiming/yzm/Text2SQL/SkillAgent/runs/run_20260730_113510_filtering_data_filtered/data"
+}

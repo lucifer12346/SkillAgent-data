@@ -1,0 +1,1522 @@
+{
+  "database_root": "/public/home/yaozhiming/yzm/Text2SQL/data",
+  "unique_database_files": 303,
+  "total_database_bytes": 35792005120,
+  "files": [
+    {
+      "archive_path": "database_files/EHRSQL/database/eicu/eicu.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/EHRSQL/database/eicu/eicu.sqlite",
+      "size_bytes": 106176512
+    },
+    {
+      "archive_path": "database_files/EHRSQL/database/mimic_iii/mimic_iii.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/EHRSQL/database/mimic_iii/mimic_iii.sqlite",
+      "size_bytes": 98869248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/academic_conference_and_research_management/academic_conference_and_research_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/academic_conference_and_research_management/academic_conference_and_research_management.sqlite",
+      "size_bytes": 32768
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/academic_research_article_management_and_analysis/academic_research_article_management_and_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/academic_research_article_management_and_analysis/academic_research_article_management_and_analysis.sqlite",
+      "size_bytes": 73728
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/agricultural_crop_testing_and_analysis/agricultural_crop_testing_and_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/agricultural_crop_testing_and_analysis/agricultural_crop_testing_and_analysis.sqlite",
+      "size_bytes": 20480
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/agricultural_product_management_and_e_commerce/agricultural_product_management_and_e_commerce.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/agricultural_product_management_and_e_commerce/agricultural_product_management_and_e_commerce.sqlite",
+      "size_bytes": 69632
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/anomaly_detection_and_data_analysis/anomaly_detection_and_data_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/anomaly_detection_and_data_analysis/anomaly_detection_and_data_analysis.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/apparel_sizing_and_measurement_tracking/apparel_sizing_and_measurement_tracking.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/apparel_sizing_and_measurement_tracking/apparel_sizing_and_measurement_tracking.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/application_security_requirements_and_compliance_tracking/application_security_requirements_and_compliance_tracking.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/application_security_requirements_and_compliance_tracking/application_security_requirements_and_compliance_tracking.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/automotive_vehicle_specifications_and_fuel_consumption/automotive_vehicle_specifications_and_fuel_consumption.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/automotive_vehicle_specifications_and_fuel_consumption/automotive_vehicle_specifications_and_fuel_consumption.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/autonomous_vehicle_sensor_data_and_performance_tracking/autonomous_vehicle_sensor_data_and_performance_tracking.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/autonomous_vehicle_sensor_data_and_performance_tracking/autonomous_vehicle_sensor_data_and_performance_tracking.sqlite",
+      "size_bytes": 73728
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/aviation_accident_and_incident_database/aviation_accident_and_incident_database.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/aviation_accident_and_incident_database/aviation_accident_and_incident_database.sqlite",
+      "size_bytes": 81920
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/behavioral_experiment_data_management/behavioral_experiment_data_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/behavioral_experiment_data_management/behavioral_experiment_data_management.sqlite",
+      "size_bytes": 49152
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/biological_data_management_and_analysis/biological_data_management_and_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/biological_data_management_and_analysis/biological_data_management_and_analysis.sqlite",
+      "size_bytes": 24576
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/botanical_and_horticultural_data_management/botanical_and_horticultural_data_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/botanical_and_horticultural_data_management/botanical_and_horticultural_data_management.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/botany_conference_organization_and_management/botany_conference_organization_and_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/botany_conference_organization_and_management/botany_conference_organization_and_management.sqlite",
+      "size_bytes": 73728
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/cancer_patient_data_and_treatment_outcomes/cancer_patient_data_and_treatment_outcomes.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/cancer_patient_data_and_treatment_outcomes/cancer_patient_data_and_treatment_outcomes.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/cardiovascular_health_data_analysis/cardiovascular_health_data_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/cardiovascular_health_data_analysis/cardiovascular_health_data_analysis.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/cellular_and_anatomical_data_analysis/cellular_and_anatomical_data_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/cellular_and_anatomical_data_analysis/cellular_and_anatomical_data_analysis.sqlite",
+      "size_bytes": 49152
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/change_log_and_exposure_management/change_log_and_exposure_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/change_log_and_exposure_management/change_log_and_exposure_management.sqlite",
+      "size_bytes": 28672
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/chemical_analysis_and_laboratory_experimentation/chemical_analysis_and_laboratory_experimentation.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/chemical_analysis_and_laboratory_experimentation/chemical_analysis_and_laboratory_experimentation.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/chemical_substance_management_and_hazard_classification/chemical_substance_management_and_hazard_classification.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/chemical_substance_management_and_hazard_classification/chemical_substance_management_and_hazard_classification.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/child_care_provider_licensing_and_regulation/child_care_provider_licensing_and_regulation.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/child_care_provider_licensing_and_regulation/child_care_provider_licensing_and_regulation.sqlite",
+      "size_bytes": 73728
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/climate_data_collection_and_analysis/climate_data_collection_and_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/climate_data_collection_and_analysis/climate_data_collection_and_analysis.sqlite",
+      "size_bytes": 24576
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/clinical_trial_data_management/clinical_trial_data_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/clinical_trial_data_management/clinical_trial_data_management.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/clinical_trial_research_and_analysis/clinical_trial_research_and_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/clinical_trial_research_and_analysis/clinical_trial_research_and_analysis.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/clothing_and_apparel_sizing_standardization/clothing_and_apparel_sizing_standardization.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/clothing_and_apparel_sizing_standardization/clothing_and_apparel_sizing_standardization.sqlite",
+      "size_bytes": 32768
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/clothing_size_conversion_and_inventory_management_402908/clothing_size_conversion_and_inventory_management_402908.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/clothing_size_conversion_and_inventory_management_402908/clothing_size_conversion_and_inventory_management_402908.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/clothing_size_reference_and_measurement_table/clothing_size_reference_and_measurement_table.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/clothing_size_reference_and_measurement_table/clothing_size_reference_and_measurement_table.sqlite",
+      "size_bytes": 28672
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/clothing_size_specifications_for_children_and_adults/clothing_size_specifications_for_children_and_adults.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/clothing_size_specifications_for_children_and_adults/clothing_size_specifications_for_children_and_adults.sqlite",
+      "size_bytes": 32768
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/code_quality_and_technical_debt_analysis/code_quality_and_technical_debt_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/code_quality_and_technical_debt_analysis/code_quality_and_technical_debt_analysis.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/cognitive_psychology_experiment_data_management/cognitive_psychology_experiment_data_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/cognitive_psychology_experiment_data_management/cognitive_psychology_experiment_data_management.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/company_financial_and_operational_metrics/company_financial_and_operational_metrics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/company_financial_and_operational_metrics/company_financial_and_operational_metrics.sqlite",
+      "size_bytes": 36864
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/conference_presentation_scheduling_and_management/conference_presentation_scheduling_and_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/conference_presentation_scheduling_and_management/conference_presentation_scheduling_and_management.sqlite",
+      "size_bytes": 32768
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/consumer_transaction_and_demographics_analysis/consumer_transaction_and_demographics_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/consumer_transaction_and_demographics_analysis/consumer_transaction_and_demographics_analysis.sqlite",
+      "size_bytes": 69632
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/contraceptive_method_usage_and_demographics/contraceptive_method_usage_and_demographics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/contraceptive_method_usage_and_demographics/contraceptive_method_usage_and_demographics.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/cost_analysis_and_optimization_for_manufacturing_processes/cost_analysis_and_optimization_for_manufacturing_processes.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/cost_analysis_and_optimization_for_manufacturing_processes/cost_analysis_and_optimization_for_manufacturing_processes.sqlite",
+      "size_bytes": 98304
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/country_statistics_and_development_data/country_statistics_and_development_data.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/country_statistics_and_development_data/country_statistics_and_development_data.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/course_enrollment_and_management_system/course_enrollment_and_management_system.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/course_enrollment_and_management_system/course_enrollment_and_management_system.sqlite",
+      "size_bytes": 81920
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/covid_19_case_management_and_tracking_814599/covid_19_case_management_and_tracking_814599.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/covid_19_case_management_and_tracking_814599/covid_19_case_management_and_tracking_814599.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/covid_19_infection_data_analysis/covid_19_infection_data_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/covid_19_infection_data_analysis/covid_19_infection_data_analysis.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/crafting_resource_requirements_and_production_time_analysis/crafting_resource_requirements_and_production_time_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/crafting_resource_requirements_and_production_time_analysis/crafting_resource_requirements_and_production_time_analysis.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/cricket_match_management_and_statistics/cricket_match_management_and_statistics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/cricket_match_management_and_statistics/cricket_match_management_and_statistics.sqlite",
+      "size_bytes": 32768
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/cryptocurrency_trading_and_market_data/cryptocurrency_trading_and_market_data.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/cryptocurrency_trading_and_market_data/cryptocurrency_trading_and_market_data.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/customer_relationship_management_and_analytics/customer_relationship_management_and_analytics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/customer_relationship_management_and_analytics/customer_relationship_management_and_analytics.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/customer_relationship_management_and_marketing_analysis/customer_relationship_management_and_marketing_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/customer_relationship_management_and_marketing_analysis/customer_relationship_management_and_marketing_analysis.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/demographic_data_analysis_and_trends/demographic_data_analysis_and_trends.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/demographic_data_analysis_and_trends/demographic_data_analysis_and_trends.sqlite",
+      "size_bytes": 28672
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/demographic_data_collection_and_analysis_426928/demographic_data_collection_and_analysis_426928.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/demographic_data_collection_and_analysis_426928/demographic_data_collection_and_analysis_426928.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/digital_currency_market_and_price_tracking/digital_currency_market_and_price_tracking.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/digital_currency_market_and_price_tracking/digital_currency_market_and_price_tracking.sqlite",
+      "size_bytes": 69632
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/disease_related_protein_interaction_databases/disease_related_protein_interaction_databases.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/disease_related_protein_interaction_databases/disease_related_protein_interaction_databases.sqlite",
+      "size_bytes": 86016
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/django_learning_resource_management/django_learning_resource_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/django_learning_resource_management/django_learning_resource_management.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/e_commerce_order_management_and_profit_tracking/e_commerce_order_management_and_profit_tracking.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/e_commerce_order_management_and_profit_tracking/e_commerce_order_management_and_profit_tracking.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/e_commerce_order_management_and_tracking_724920/e_commerce_order_management_and_tracking_724920.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/e_commerce_order_management_and_tracking_724920/e_commerce_order_management_and_tracking_724920.sqlite",
+      "size_bytes": 49152
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/e_commerce_shop_management_and_analytics/e_commerce_shop_management_and_analytics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/e_commerce_shop_management_and_analytics/e_commerce_shop_management_and_analytics.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/education_performance_and_budget_analysis/education_performance_and_budget_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/education_performance_and_budget_analysis/education_performance_and_budget_analysis.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/electronic_component_characterization_and_modeling/electronic_component_characterization_and_modeling.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/electronic_component_characterization_and_modeling/electronic_component_characterization_and_modeling.sqlite",
+      "size_bytes": 36864
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/electronic_component_specifications_and_parameters_785398/electronic_component_specifications_and_parameters_785398.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/electronic_component_specifications_and_parameters_785398/electronic_component_specifications_and_parameters_785398.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/embedded_systems_project_documentation_and_management/embedded_systems_project_documentation_and_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/embedded_systems_project_documentation_and_management/embedded_systems_project_documentation_and_management.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/emotion_recognition_and_sentiment_analysis/emotion_recognition_and_sentiment_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/emotion_recognition_and_sentiment_analysis/emotion_recognition_and_sentiment_analysis.sqlite",
+      "size_bytes": 69632
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/employee_satisfaction_and_importance_factors_survey/employee_satisfaction_and_importance_factors_survey.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/employee_satisfaction_and_importance_factors_survey/employee_satisfaction_and_importance_factors_survey.sqlite",
+      "size_bytes": 49152
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/employment_and_earnings_data_management/employment_and_earnings_data_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/employment_and_earnings_data_management/employment_and_earnings_data_management.sqlite",
+      "size_bytes": 110592
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/energy_consumption_and_hvac_performance_tracking/energy_consumption_and_hvac_performance_tracking.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/energy_consumption_and_hvac_performance_tracking/energy_consumption_and_hvac_performance_tracking.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/energy_market_and_infrastructure_analysis/energy_market_and_infrastructure_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/energy_market_and_infrastructure_analysis/energy_market_and_infrastructure_analysis.sqlite",
+      "size_bytes": 36864
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/energy_usage_and_environmental_conditions/energy_usage_and_environmental_conditions.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/energy_usage_and_environmental_conditions/energy_usage_and_environmental_conditions.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/environmental_monitoring_and_remote_sensing/environmental_monitoring_and_remote_sensing.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/environmental_monitoring_and_remote_sensing/environmental_monitoring_and_remote_sensing.sqlite",
+      "size_bytes": 94208
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/environmental_research_and_data_analysis/environmental_research_and_data_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/environmental_research_and_data_analysis/environmental_research_and_data_analysis.sqlite",
+      "size_bytes": 40960
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/fantasy_literature_houses_and_families/fantasy_literature_houses_and_families.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/fantasy_literature_houses_and_families/fantasy_literature_houses_and_families.sqlite",
+      "size_bytes": 49152
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/fashion_sizing_and_inventory_management/fashion_sizing_and_inventory_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/fashion_sizing_and_inventory_management/fashion_sizing_and_inventory_management.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/feature_correlation_analysis/feature_correlation_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/feature_correlation_analysis/feature_correlation_analysis.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/film_industry_data_management_and_analytics_528441/film_industry_data_management_and_analytics_528441.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/film_industry_data_management_and_analytics_528441/film_industry_data_management_and_analytics_528441.sqlite",
+      "size_bytes": 77824
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/film_production_and_distribution_management_107403/film_production_and_distribution_management_107403.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/film_production_and_distribution_management_107403/film_production_and_distribution_management_107403.sqlite",
+      "size_bytes": 40960
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/financial_market_data_and_stock_tracking/financial_market_data_and_stock_tracking.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/financial_market_data_and_stock_tracking/financial_market_data_and_stock_tracking.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/financial_market_data_and_trading_analytics_179823/financial_market_data_and_trading_analytics_179823.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/financial_market_data_and_trading_analytics_179823/financial_market_data_and_trading_analytics_179823.sqlite",
+      "size_bytes": 28672
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/financial_performance_analysis_and_reporting_386473/financial_performance_analysis_and_reporting_386473.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/financial_performance_analysis_and_reporting_386473/financial_performance_analysis_and_reporting_386473.sqlite",
+      "size_bytes": 49152
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/financial_stock_market_data_analysis_917683/financial_stock_market_data_analysis_917683.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/financial_stock_market_data_analysis_917683/financial_stock_market_data_analysis_917683.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/financial_trading_and_market_analysis_613845/financial_trading_and_market_analysis_613845.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/financial_trading_and_market_analysis_613845/financial_trading_and_market_analysis_613845.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/food_item_customization_and_ordering_system/food_item_customization_and_ordering_system.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/food_item_customization_and_ordering_system/food_item_customization_and_ordering_system.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/fortune_global_500_company_information_and_performance_metrics/fortune_global_500_company_information_and_performance_metrics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/fortune_global_500_company_information_and_performance_metrics/fortune_global_500_company_information_and_performance_metrics.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/game_mechanics_and_character_stats_management/game_mechanics_and_character_stats_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/game_mechanics_and_character_stats_management/game_mechanics_and_character_stats_management.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/gaming_and_strategy_analytics/gaming_and_strategy_analytics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/gaming_and_strategy_analytics/gaming_and_strategy_analytics.sqlite",
+      "size_bytes": 32768
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/genomic_data_and_antibiotic_resistance_analysis/genomic_data_and_antibiotic_resistance_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/genomic_data_and_antibiotic_resistance_analysis/genomic_data_and_antibiotic_resistance_analysis.sqlite",
+      "size_bytes": 40960
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/geographical_and_demographical_data_management_185438/geographical_and_demographical_data_management_185438.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/geographical_and_demographical_data_management_185438/geographical_and_demographical_data_management_185438.sqlite",
+      "size_bytes": 49152
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/global_happiness_and_quality_of_life_metrics_796588/global_happiness_and_quality_of_life_metrics_796588.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/global_happiness_and_quality_of_life_metrics_796588/global_happiness_and_quality_of_life_metrics_796588.sqlite",
+      "size_bytes": 40960
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/global_happiness_and_wealth_analysis/global_happiness_and_wealth_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/global_happiness_and_wealth_analysis/global_happiness_and_wealth_analysis.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/global_happiness_and_well_being_index_251836/global_happiness_and_well_being_index_251836.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/global_happiness_and_well_being_index_251836/global_happiness_and_well_being_index_251836.sqlite",
+      "size_bytes": 28672
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/global_health_data_management_and_analysis/global_health_data_management_and_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/global_health_data_management_and_analysis/global_health_data_management_and_analysis.sqlite",
+      "size_bytes": 69632
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/global_population_and_economic_data_analysis/global_population_and_economic_data_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/global_population_and_economic_data_analysis/global_population_and_economic_data_analysis.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/government_grants_and_funding_for_schools_and_municipalities/government_grants_and_funding_for_schools_and_municipalities.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/government_grants_and_funding_for_schools_and_municipalities/government_grants_and_funding_for_schools_and_municipalities.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/health_and_demographic_data_analysis_164966/health_and_demographic_data_analysis_164966.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/health_and_demographic_data_analysis_164966/health_and_demographic_data_analysis_164966.sqlite",
+      "size_bytes": 28672
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/healthcare_and_influenza_vaccination_statistics/healthcare_and_influenza_vaccination_statistics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/healthcare_and_influenza_vaccination_statistics/healthcare_and_influenza_vaccination_statistics.sqlite",
+      "size_bytes": 49152
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/healthcare_and_medical_research_558388/healthcare_and_medical_research_558388.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/healthcare_and_medical_research_558388/healthcare_and_medical_research_558388.sqlite",
+      "size_bytes": 77824
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/healthcare_data_analysis_and_management/healthcare_data_analysis_and_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/healthcare_data_analysis_and_management/healthcare_data_analysis_and_management.sqlite",
+      "size_bytes": 86016
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/healthcare_departmental_agile_readiness_assessment/healthcare_departmental_agile_readiness_assessment.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/healthcare_departmental_agile_readiness_assessment/healthcare_departmental_agile_readiness_assessment.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/high_performance_computing_process_management_and_analysis/high_performance_computing_process_management_and_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/high_performance_computing_process_management_and_analysis/high_performance_computing_process_management_and_analysis.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/high_school_sports_match_results_and_scheduling/high_school_sports_match_results_and_scheduling.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/high_school_sports_match_results_and_scheduling/high_school_sports_match_results_and_scheduling.sqlite",
+      "size_bytes": 28672
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/higher_education_financial_metrics_and_employment_outcomes/higher_education_financial_metrics_and_employment_outcomes.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/higher_education_financial_metrics_and_employment_outcomes/higher_education_financial_metrics_and_employment_outcomes.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/hiking_trail_management_and_user_tracking/hiking_trail_management_and_user_tracking.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/hiking_trail_management_and_user_tracking/hiking_trail_management_and_user_tracking.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/hockey_player_statistics_and_performance_tracking_281470/hockey_player_statistics_and_performance_tracking_281470.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/hockey_player_statistics_and_performance_tracking_281470/hockey_player_statistics_and_performance_tracking_281470.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/housing_data_management_and_analytics/housing_data_management_and_analytics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/housing_data_management_and_analytics/housing_data_management_and_analytics.sqlite",
+      "size_bytes": 86016
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/image_file_format_compatibility_and_conversion/image_file_format_compatibility_and_conversion.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/image_file_format_compatibility_and_conversion/image_file_format_compatibility_and_conversion.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/immigration_case_management_and_wage_analysis/immigration_case_management_and_wage_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/immigration_case_management_and_wage_analysis/immigration_case_management_and_wage_analysis.sqlite",
+      "size_bytes": 24576
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/investment_portfolio_management/investment_portfolio_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/investment_portfolio_management/investment_portfolio_management.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/item_recommendation_model_training_and_configuration/item_recommendation_model_training_and_configuration.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/item_recommendation_model_training_and_configuration/item_recommendation_model_training_and_configuration.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/job_listings_and_recruitment_management/job_listings_and_recruitment_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/job_listings_and_recruitment_management/job_listings_and_recruitment_management.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/law_enforcement_incident_reporting_and_analysis/law_enforcement_incident_reporting_and_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/law_enforcement_incident_reporting_and_analysis/law_enforcement_incident_reporting_and_analysis.sqlite",
+      "size_bytes": 49152
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/literary_transcripts_and_analysis/literary_transcripts_and_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/literary_transcripts_and_analysis/literary_transcripts_and_analysis.sqlite",
+      "size_bytes": 32768
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/machine_learning_experiment_tracking_and_analysis_48458/machine_learning_experiment_tracking_and_analysis_48458.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/machine_learning_experiment_tracking_and_analysis_48458/machine_learning_experiment_tracking_and_analysis_48458.sqlite",
+      "size_bytes": 49152
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/marine_biogeochemistry_data_management/marine_biogeochemistry_data_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/marine_biogeochemistry_data_management/marine_biogeochemistry_data_management.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/marketing_data_analysis_and_campaign_optimization/marketing_data_analysis_and_campaign_optimization.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/marketing_data_analysis_and_campaign_optimization/marketing_data_analysis_and_campaign_optimization.sqlite",
+      "size_bytes": 36864
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/material_classification_and_performance_metrics/material_classification_and_performance_metrics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/material_classification_and_performance_metrics/material_classification_and_performance_metrics.sqlite",
+      "size_bytes": 36864
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/media_article_aggregation_and_analysis/media_article_aggregation_and_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/media_article_aggregation_and_analysis/media_article_aggregation_and_analysis.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/media_asset_management/media_asset_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/media_asset_management/media_asset_management.sqlite",
+      "size_bytes": 40960
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/medical_research_and_article_management/medical_research_and_article_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/medical_research_and_article_management/medical_research_and_article_management.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/metadata_management_and_object_description/metadata_management_and_object_description.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/metadata_management_and_object_description/metadata_management_and_object_description.sqlite",
+      "size_bytes": 49152
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/meteorological_data_collection_and_analysis_409262/meteorological_data_collection_and_analysis_409262.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/meteorological_data_collection_and_analysis_409262/meteorological_data_collection_and_analysis_409262.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/military_installation_budgeting_and_cost_management/military_installation_budgeting_and_cost_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/military_installation_budgeting_and_cost_management/military_installation_budgeting_and_cost_management.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/motion_capture_and_analysis/motion_capture_and_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/motion_capture_and_analysis/motion_capture_and_analysis.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/music_streaming_and_audio_features_analysis/music_streaming_and_audio_features_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/music_streaming_and_audio_features_analysis/music_streaming_and_audio_features_analysis.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/music_track_and_playlist_management/music_track_and_playlist_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/music_track_and_playlist_management/music_track_and_playlist_management.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/nba_eastern_conference_team_statistics/nba_eastern_conference_team_statistics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/nba_eastern_conference_team_statistics/nba_eastern_conference_team_statistics.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/network_client_configuration_and_security_management/network_client_configuration_and_security_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/network_client_configuration_and_security_management/network_client_configuration_and_security_management.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/network_switch_configuration_and_management/network_switch_configuration_and_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/network_switch_configuration_and_management/network_switch_configuration_and_management.sqlite",
+      "size_bytes": 81920
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/networking_equipment_and_vendor_management/networking_equipment_and_vendor_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/networking_equipment_and_vendor_management/networking_equipment_and_vendor_management.sqlite",
+      "size_bytes": 32768
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/oceanographic_data_collection_and_analysis/oceanographic_data_collection_and_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/oceanographic_data_collection_and_analysis/oceanographic_data_collection_and_analysis.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/online_advertising_and_user_engagement_analytics/online_advertising_and_user_engagement_analytics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/online_advertising_and_user_engagement_analytics/online_advertising_and_user_engagement_analytics.sqlite",
+      "size_bytes": 36864
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/online_community_and_forum_management_465138/online_community_and_forum_management_465138.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/online_community_and_forum_management_465138/online_community_and_forum_management_465138.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/pandemic_data_monitoring_and_reporting/pandemic_data_monitoring_and_reporting.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/pandemic_data_monitoring_and_reporting/pandemic_data_monitoring_and_reporting.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/passenger_and_ticketing_information_for_maritime_travel/passenger_and_ticketing_information_for_maritime_travel.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/passenger_and_ticketing_information_for_maritime_travel/passenger_and_ticketing_information_for_maritime_travel.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/passenger_data_management_for_historical_events/passenger_data_management_for_historical_events.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/passenger_data_management_for_historical_events/passenger_data_management_for_historical_events.sqlite",
+      "size_bytes": 28672
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/performance_metrics_for_floating_point_operations/performance_metrics_for_floating_point_operations.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/performance_metrics_for_floating_point_operations/performance_metrics_for_floating_point_operations.sqlite",
+      "size_bytes": 28672
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/phospholipid_and_lipidomics_data_management/phospholipid_and_lipidomics_data_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/phospholipid_and_lipidomics_data_management/phospholipid_and_lipidomics_data_management.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/physiological_signal_processing_and_analysis/physiological_signal_processing_and_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/physiological_signal_processing_and_analysis/physiological_signal_processing_and_analysis.sqlite",
+      "size_bytes": 81920
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/police_involved_fatal_encounters_and_demographic_analysis/police_involved_fatal_encounters_and_demographic_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/police_involved_fatal_encounters_and_demographic_analysis/police_involved_fatal_encounters_and_demographic_analysis.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/polymer_science_educational_content_management/polymer_science_educational_content_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/polymer_science_educational_content_management/polymer_science_educational_content_management.sqlite",
+      "size_bytes": 49152
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/primate_cognition_and_behavioral_studies/primate_cognition_and_behavioral_studies.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/primate_cognition_and_behavioral_studies/primate_cognition_and_behavioral_studies.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/project_management_and_performance_tracking/project_management_and_performance_tracking.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/project_management_and_performance_tracking/project_management_and_performance_tracking.sqlite",
+      "size_bytes": 32768
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/project_success_and_failure_analysis/project_success_and_failure_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/project_success_and_failure_analysis/project_success_and_failure_analysis.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/public_records_request_management/public_records_request_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/public_records_request_management/public_records_request_management.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/public_school_funding_allocation/public_school_funding_allocation.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/public_school_funding_allocation/public_school_funding_allocation.sqlite",
+      "size_bytes": 49152
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/publications_and_research_management/publications_and_research_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/publications_and_research_management/publications_and_research_management.sqlite",
+      "size_bytes": 98304
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/quality_management_and_compliance_auditing/quality_management_and_compliance_auditing.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/quality_management_and_compliance_auditing/quality_management_and_compliance_auditing.sqlite",
+      "size_bytes": 69632
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/radio_station_licensing_and_broadcast_management/radio_station_licensing_and_broadcast_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/radio_station_licensing_and_broadcast_management/radio_station_licensing_and_broadcast_management.sqlite",
+      "size_bytes": 69632
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/real_estate_property_management_517626/real_estate_property_management_517626.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/real_estate_property_management_517626/real_estate_property_management_517626.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/real_estate_property_management_and_analysis_169920/real_estate_property_management_and_analysis_169920.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/real_estate_property_management_and_analysis_169920/real_estate_property_management_and_analysis_169920.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/recipe_management_and_food_blogging/recipe_management_and_food_blogging.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/recipe_management_and_food_blogging/recipe_management_and_food_blogging.sqlite",
+      "size_bytes": 49152
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/reinforcement_learning_environment_and_agent_training/reinforcement_learning_environment_and_agent_training.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/reinforcement_learning_environment_and_agent_training/reinforcement_learning_environment_and_agent_training.sqlite",
+      "size_bytes": 28672
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/reinforcement_learning_experiment_tracking_and_analysis/reinforcement_learning_experiment_tracking_and_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/reinforcement_learning_experiment_tracking_and_analysis/reinforcement_learning_experiment_tracking_and_analysis.sqlite",
+      "size_bytes": 69632
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/retail_sales_and_operations_analytics/retail_sales_and_operations_analytics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/retail_sales_and_operations_analytics/retail_sales_and_operations_analytics.sqlite",
+      "size_bytes": 86016
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/retail_sales_transaction_management/retail_sales_transaction_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/retail_sales_transaction_management/retail_sales_transaction_management.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/sailing_competition_results_management_769285/sailing_competition_results_management_769285.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/sailing_competition_results_management_769285/sailing_competition_results_management_769285.sqlite",
+      "size_bytes": 16384
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/salary_growth_and_career_progression_in_various_industries/salary_growth_and_career_progression_in_various_industries.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/salary_growth_and_career_progression_in_various_industries/salary_growth_and_career_progression_in_various_industries.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/scientific_research_and_publication_management/scientific_research_and_publication_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/scientific_research_and_publication_management/scientific_research_and_publication_management.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/sensor_data_collection_and_analysis_438863/sensor_data_collection_and_analysis_438863.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/sensor_data_collection_and_analysis_438863/sensor_data_collection_and_analysis_438863.sqlite",
+      "size_bytes": 77824
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/sensor_data_for_activity_recognition/sensor_data_for_activity_recognition.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/sensor_data_for_activity_recognition/sensor_data_for_activity_recognition.sqlite",
+      "size_bytes": 49152
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/server_performance_monitoring_and_analytics_240281/server_performance_monitoring_and_analytics_240281.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/server_performance_monitoring_and_analytics_240281/server_performance_monitoring_and_analytics_240281.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/service_registry_configuration_management/service_registry_configuration_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/service_registry_configuration_management/service_registry_configuration_management.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/simulation_and_game_analytics/simulation_and_game_analytics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/simulation_and_game_analytics/simulation_and_game_analytics.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/simulation_time_series_data_management/simulation_time_series_data_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/simulation_time_series_data_management/simulation_time_series_data_management.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/ski_resort_lift_usage_tracking/ski_resort_lift_usage_tracking.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/ski_resort_lift_usage_tracking/ski_resort_lift_usage_tracking.sqlite",
+      "size_bytes": 24576
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/snow_depth_and_water_equivalent_data_for_longs_peak/snow_depth_and_water_equivalent_data_for_longs_peak.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/snow_depth_and_water_equivalent_data_for_longs_peak/snow_depth_and_water_equivalent_data_for_longs_peak.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/social_media_analysis_and_sentiment_tracking_for_canine_related_content/social_media_analysis_and_sentiment_tracking_for_canine_related_content.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/social_media_analysis_and_sentiment_tracking_for_canine_related_content/social_media_analysis_and_sentiment_tracking_for_canine_related_content.sqlite",
+      "size_bytes": 69632
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/social_media_analytics_and_engagement_703906/social_media_analytics_and_engagement_703906.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/social_media_analytics_and_engagement_703906/social_media_analytics_and_engagement_703906.sqlite",
+      "size_bytes": 77824
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/social_media_image_posting_and_engagement_tracking/social_media_image_posting_and_engagement_tracking.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/social_media_image_posting_and_engagement_tracking/social_media_image_posting_and_engagement_tracking.sqlite",
+      "size_bytes": 86016
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/social_media_sentiment_analysis_and_text_preprocessing/social_media_sentiment_analysis_and_text_preprocessing.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/social_media_sentiment_analysis_and_text_preprocessing/social_media_sentiment_analysis_and_text_preprocessing.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/software_code_metrics_and_analysis/software_code_metrics_and_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/software_code_metrics_and_analysis/software_code_metrics_and_analysis.sqlite",
+      "size_bytes": 86016
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/soil_composition_and_horizon_analysis/soil_composition_and_horizon_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/soil_composition_and_horizon_analysis/soil_composition_and_horizon_analysis.sqlite",
+      "size_bytes": 16384
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/sports_event_management_and_match_tracking/sports_event_management_and_match_tracking.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/sports_event_management_and_match_tracking/sports_event_management_and_match_tracking.sqlite",
+      "size_bytes": 90112
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/sports_event_tracking_and_analysis/sports_event_tracking_and_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/sports_event_tracking_and_analysis/sports_event_tracking_and_analysis.sqlite",
+      "size_bytes": 40960
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/sports_game_data_analysis/sports_game_data_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/sports_game_data_analysis/sports_game_data_analysis.sqlite",
+      "size_bytes": 73728
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/sports_game_statistics_and_betting_odds/sports_game_statistics_and_betting_odds.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/sports_game_statistics_and_betting_odds/sports_game_statistics_and_betting_odds.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/sports_team_scheduling_and_accommodation_management/sports_team_scheduling_and_accommodation_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/sports_team_scheduling_and_accommodation_management/sports_team_scheduling_and_accommodation_management.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/stock_market_data_analysis_411031/stock_market_data_analysis_411031.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/stock_market_data_analysis_411031/stock_market_data_analysis_411031.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/stock_market_trading_and_analysis_559500/stock_market_trading_and_analysis_559500.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/stock_market_trading_and_analysis_559500/stock_market_trading_and_analysis_559500.sqlite",
+      "size_bytes": 32768
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/stock_trading_and_market_analysis/stock_trading_and_market_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/stock_trading_and_market_analysis/stock_trading_and_market_analysis.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/suicide_statistics_and_demographic_analysis/suicide_statistics_and_demographic_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/suicide_statistics_and_demographic_analysis/suicide_statistics_and_demographic_analysis.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/survey_response_analysis_and_categorization/survey_response_analysis_and_categorization.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/survey_response_analysis_and_categorization/survey_response_analysis_and_categorization.sqlite",
+      "size_bytes": 90112
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/task_management_and_tracking_system/task_management_and_tracking_system.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/task_management_and_tracking_system/task_management_and_tracking_system.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/taxi_ride_data_management/taxi_ride_data_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/taxi_ride_data_management/taxi_ride_data_management.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/telecommunications_customer_information_and_billing/telecommunications_customer_information_and_billing.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/telecommunications_customer_information_and_billing/telecommunications_customer_information_and_billing.sqlite",
+      "size_bytes": 94208
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/terrorist_attacks_data_analysis/terrorist_attacks_data_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/terrorist_attacks_data_analysis/terrorist_attacks_data_analysis.sqlite",
+      "size_bytes": 49152
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/transcript_management_and_analysis_for_podcasts_and_webinars/transcript_management_and_analysis_for_podcasts_and_webinars.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/transcript_management_and_analysis_for_podcasts_and_webinars/transcript_management_and_analysis_for_podcasts_and_webinars.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/travel_and_hospitality_industry_analysis/travel_and_hospitality_industry_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/travel_and_hospitality_industry_analysis/travel_and_hospitality_industry_analysis.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/travel_and_tourism_expenditure_analysis/travel_and_tourism_expenditure_analysis.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/travel_and_tourism_expenditure_analysis/travel_and_tourism_expenditure_analysis.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/university_course_and_grade_management/university_course_and_grade_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/university_course_and_grade_management/university_course_and_grade_management.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/university_social_media_management_and_analytics/university_social_media_management_and_analytics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/university_social_media_management_and_analytics/university_social_media_management_and_analytics.sqlite",
+      "size_bytes": 86016
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/urban_quality_of_life_metrics/urban_quality_of_life_metrics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/urban_quality_of_life_metrics/urban_quality_of_life_metrics.sqlite",
+      "size_bytes": 53248
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/user_account_and_role_management_27810/user_account_and_role_management_27810.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/user_account_and_role_management_27810/user_account_and_role_management_27810.sqlite",
+      "size_bytes": 20480
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/user_interface__ui__component_customization_and_management/user_interface__ui__component_customization_and_management.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/user_interface__ui__component_customization_and_management/user_interface__ui__component_customization_and_management.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/user_role_management_and_audit_tracking/user_role_management_and_audit_tracking.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/user_role_management_and_audit_tracking/user_role_management_and_audit_tracking.sqlite",
+      "size_bytes": 57344
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/vaccination_coverage_statistics/vaccination_coverage_statistics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/vaccination_coverage_statistics/vaccination_coverage_statistics.sqlite",
+      "size_bytes": 40960
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/wealth_and_influence_of_billionaires/wealth_and_influence_of_billionaires.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/wealth_and_influence_of_billionaires/wealth_and_influence_of_billionaires.sqlite",
+      "size_bytes": 49152
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/weather_data_analytics_and_monitoring/weather_data_analytics_and_monitoring.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/weather_data_analytics_and_monitoring/weather_data_analytics_and_monitoring.sqlite",
+      "size_bytes": 61440
+    },
+    {
+      "archive_path": "database_files/SynSQL-2.5M/databases/weather_data_collection_and_analysis_555617/weather_data_collection_and_analysis_555617.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/SynSQL-2.5M/databases/weather_data_collection_and_analysis_555617/weather_data_collection_and_analysis_555617.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/bird/dev_20240627/dev_databases/california_schools/california_schools.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/dev_20240627/dev_databases/california_schools/california_schools.sqlite",
+      "size_bytes": 11116544
+    },
+    {
+      "archive_path": "database_files/bird/dev_20240627/dev_databases/card_games/card_games.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/dev_20240627/dev_databases/card_games/card_games.sqlite",
+      "size_bytes": 261820416
+    },
+    {
+      "archive_path": "database_files/bird/dev_20240627/dev_databases/codebase_community/codebase_community.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/dev_20240627/dev_databases/codebase_community/codebase_community.sqlite",
+      "size_bytes": 481419264
+    },
+    {
+      "archive_path": "database_files/bird/dev_20240627/dev_databases/debit_card_specializing/debit_card_specializing.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/dev_20240627/dev_databases/debit_card_specializing/debit_card_specializing.sqlite",
+      "size_bytes": 34635776
+    },
+    {
+      "archive_path": "database_files/bird/dev_20240627/dev_databases/european_football_2/european_football_2.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/dev_20240627/dev_databases/european_football_2/european_football_2.sqlite",
+      "size_bytes": 597754880
+    },
+    {
+      "archive_path": "database_files/bird/dev_20240627/dev_databases/financial/financial.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/dev_20240627/dev_databases/financial/financial.sqlite",
+      "size_bytes": 71294976
+    },
+    {
+      "archive_path": "database_files/bird/dev_20240627/dev_databases/formula_1/formula_1.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/dev_20240627/dev_databases/formula_1/formula_1.sqlite",
+      "size_bytes": 22360064
+    },
+    {
+      "archive_path": "database_files/bird/dev_20240627/dev_databases/student_club/student_club.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/dev_20240627/dev_databases/student_club/student_club.sqlite",
+      "size_bytes": 2641920
+    },
+    {
+      "archive_path": "database_files/bird/dev_20240627/dev_databases/superhero/superhero.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/dev_20240627/dev_databases/superhero/superhero.sqlite",
+      "size_bytes": 237568
+    },
+    {
+      "archive_path": "database_files/bird/dev_20240627/dev_databases/thrombosis_prediction/thrombosis_prediction.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/dev_20240627/dev_databases/thrombosis_prediction/thrombosis_prediction.sqlite",
+      "size_bytes": 7327744
+    },
+    {
+      "archive_path": "database_files/bird/dev_20240627/dev_databases/toxicology/toxicology.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/dev_20240627/dev_databases/toxicology/toxicology.sqlite",
+      "size_bytes": 2678784
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/address/address.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/address/address.sqlite",
+      "size_bytes": 26550272
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/airline/airline.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/airline/airline.sqlite",
+      "size_bytes": 122699776
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/app_store/app_store.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/app_store/app_store.sqlite",
+      "size_bytes": 18018304
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/authors/authors.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/authors/authors.sqlite",
+      "size_bytes": 616001536
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/beer_factory/beer_factory.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/beer_factory/beer_factory.sqlite",
+      "size_bytes": 991232
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/bike_share_1/bike_share_1.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/bike_share_1/bike_share_1.sqlite",
+      "size_bytes": 5209406464
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/book_publishing_company/book_publishing_company.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/book_publishing_company/book_publishing_company.sqlite",
+      "size_bytes": 184320
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/books/books.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/books/books.sqlite",
+      "size_bytes": 4337664
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/car_retails/car_retails.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/car_retails/car_retails.sqlite",
+      "size_bytes": 487424
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/cars/cars.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/cars/cars.sqlite",
+      "size_bytes": 135168
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/chicago_crime/chicago_crime.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/chicago_crime/chicago_crime.sqlite",
+      "size_bytes": 66723840
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/citeseer/citeseer.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/citeseer/citeseer.sqlite",
+      "size_bytes": 7430144
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/codebase_comments/codebase_comments.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/codebase_comments/codebase_comments.sqlite",
+      "size_bytes": 4497768448
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/coinmarketcap/coinmarketcap.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/coinmarketcap/coinmarketcap.sqlite",
+      "size_bytes": 1508139008
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/college_completion/college_completion.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/college_completion/college_completion.sqlite",
+      "size_bytes": 71217152
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/computer_student/computer_student.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/computer_student/computer_student.sqlite",
+      "size_bytes": 45056
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/cookbook/cookbook.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/cookbook/cookbook.sqlite",
+      "size_bytes": 1220608
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/craftbeer/craftbeer.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/craftbeer/craftbeer.sqlite",
+      "size_bytes": 442368
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/cs_semester/cs_semester.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/cs_semester/cs_semester.sqlite",
+      "size_bytes": 36864
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/disney/disney.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/disney/disney.sqlite",
+      "size_bytes": 258048
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/donor/donor.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/donor/donor.sqlite",
+      "size_bytes": 4497768448
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/european_football_1/european_football_1.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/european_football_1/european_football_1.sqlite",
+      "size_bytes": 11907072
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/food_inspection/food_inspection.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/food_inspection/food_inspection.sqlite",
+      "size_bytes": 5021696
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/food_inspection_2/food_inspection_2.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/food_inspection_2/food_inspection_2.sqlite",
+      "size_bytes": 216940544
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/genes/genes.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/genes/genes.sqlite",
+      "size_bytes": 1527808
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/hockey/hockey.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/hockey/hockey.sqlite",
+      "size_bytes": 6893568
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/human_resources/human_resources.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/human_resources/human_resources.sqlite",
+      "size_bytes": 28672
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/ice_hockey_draft/ice_hockey_draft.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/ice_hockey_draft/ice_hockey_draft.sqlite",
+      "size_bytes": 1028096
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/image_and_language/image_and_language.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/image_and_language/image_and_language.sqlite",
+      "size_bytes": 138891264
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/language_corpus/language_corpus.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/language_corpus/language_corpus.sqlite",
+      "size_bytes": 2383298560
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/law_episode/law_episode.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/law_episode/law_episode.sqlite",
+      "size_bytes": 548864
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/legislator/legislator.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/legislator/legislator.sqlite",
+      "size_bytes": 3485696
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/mental_health_survey/mental_health_survey.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/mental_health_survey/mental_health_survey.sqlite",
+      "size_bytes": 18276352
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/menu/menu.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/menu/menu.sqlite",
+      "size_bytes": 272371712
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/mondial_geo/mondial_geo.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/mondial_geo/mondial_geo.sqlite",
+      "size_bytes": 2113536
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/movie/movie.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/movie/movie.sqlite",
+      "size_bytes": 1568768
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/movie_3/movie_3.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/movie_3/movie_3.sqlite",
+      "size_bytes": 6356992
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/movie_platform/movie_platform.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/movie_platform/movie_platform.sqlite",
+      "size_bytes": 4311130112
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/movielens/movielens.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/movielens/movielens.sqlite",
+      "size_bytes": 85786624
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/movies_4/movies_4.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/movies_4/movies_4.sqlite",
+      "size_bytes": 13070336
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/music_platform_2/music_platform_2.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/music_platform_2/music_platform_2.sqlite",
+      "size_bytes": 1554345984
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/music_tracker/music_tracker.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/music_tracker/music_tracker.sqlite",
+      "size_bytes": 15204352
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/olympics/olympics.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/olympics/olympics.sqlite",
+      "size_bytes": 18145280
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/professional_basketball/professional_basketball.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/professional_basketball/professional_basketball.sqlite",
+      "size_bytes": 6668288
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/public_review_platform/public_review_platform.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/public_review_platform/public_review_platform.sqlite",
+      "size_bytes": 65339392
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/regional_sales/regional_sales.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/regional_sales/regional_sales.sqlite",
+      "size_bytes": 2277376
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/restaurant/restaurant.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/restaurant/restaurant.sqlite",
+      "size_bytes": 806912
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/retail_complains/retail_complains.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/retail_complains/retail_complains.sqlite",
+      "size_bytes": 25133056
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/retail_world/retail_world.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/retail_world/retail_world.sqlite",
+      "size_bytes": 65536
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/retails/retails.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/retails/retails.sqlite",
+      "size_bytes": 1027735552
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/sales/sales.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/sales/sales.sqlite",
+      "size_bytes": 130338816
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/sales_in_weather/sales_in_weather.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/sales_in_weather/sales_in_weather.sqlite",
+      "size_bytes": 464236544
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/shakespeare/shakespeare.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/shakespeare/shakespeare.sqlite",
+      "size_bytes": 12029952
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/shipping/shipping.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/shipping/shipping.sqlite",
+      "size_bytes": 131072
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/shooting/shooting.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/shooting/shooting.sqlite",
+      "size_bytes": 180224
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/simpson_episodes/simpson_episodes.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/simpson_episodes/simpson_episodes.sqlite",
+      "size_bytes": 753664
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/soccer_2016/soccer_2016.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/soccer_2016/soccer_2016.sqlite",
+      "size_bytes": 17170432
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/social_media/social_media.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/social_media/social_media.sqlite",
+      "size_bytes": 69132288
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/software_company/software_company.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/software_company/software_company.sqlite",
+      "size_bytes": 342118400
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/student_loan/student_loan.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/student_loan/student_loan.sqlite",
+      "size_bytes": 307200
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/superstore/superstore.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/superstore/superstore.sqlite",
+      "size_bytes": 6631424
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/synthea/synthea.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/synthea/synthea.sqlite",
+      "size_bytes": 38637568
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/talkingdata/talkingdata.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/talkingdata/talkingdata.sqlite",
+      "size_bytes": 1903886336
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/trains/trains.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/trains/trains.sqlite",
+      "size_bytes": 5070848
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/university/university.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/university/university.sqlite",
+      "size_bytes": 630784
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/video_games/video_games.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/video_games/video_games.sqlite",
+      "size_bytes": 2547712
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/works_cycles/works_cycles.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/works_cycles/works_cycles.sqlite",
+      "size_bytes": 114724864
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/world/world.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/world/world.sqlite",
+      "size_bytes": 253952
+    },
+    {
+      "archive_path": "database_files/bird/train/train_databases/world_development_indicators/world_development_indicators.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/bird/train/train_databases/world_development_indicators/world_development_indicators.sqlite",
+      "size_bytes": 2451682304
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/AdventureWorks/AdventureWorks.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/AdventureWorks/AdventureWorks.sqlite",
+      "size_bytes": 20205568
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/Airlines/Airlines.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Airlines/Airlines.sqlite",
+      "size_bytes": 109531136
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/Baseball/Baseball.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Baseball/Baseball.sqlite",
+      "size_bytes": 30813184
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/BowlingLeague/BowlingLeague.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/BowlingLeague/BowlingLeague.sqlite",
+      "size_bytes": 258048
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/Brazilian_E_Commerce/Brazilian_E_Commerce.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Brazilian_E_Commerce/Brazilian_E_Commerce.sqlite",
+      "size_bytes": 114589696
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/California_Traffic_Collision/California_Traffic_Collision.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/California_Traffic_Collision/California_Traffic_Collision.sqlite",
+      "size_bytes": 96423936
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/Db-IMDB/Db-IMDB.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Db-IMDB/Db-IMDB.sqlite",
+      "size_bytes": 7507968
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/EU_soccer/EU_soccer.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/EU_soccer/EU_soccer.sqlite",
+      "size_bytes": 313090048
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/E_commerce/E_commerce.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/E_commerce/E_commerce.sqlite",
+      "size_bytes": 112701440
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/EntertainmentAgency/EntertainmentAgency.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/EntertainmentAgency/EntertainmentAgency.sqlite",
+      "size_bytes": 245760
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/IPL/IPL.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/IPL/IPL.sqlite",
+      "size_bytes": 12636160
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/Pagila/Pagila.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/Pagila/Pagila.sqlite",
+      "size_bytes": 5828608
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/WWE/WWE.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/WWE/WWE.sqlite",
+      "size_bytes": 176025600
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/bank_sales_trading/bank_sales_trading.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/bank_sales_trading/bank_sales_trading.sqlite",
+      "size_bytes": 75350016
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/chinook/chinook.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/chinook/chinook.sqlite",
+      "size_bytes": 884736
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/city_legislation/city_legislation.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/city_legislation/city_legislation.sqlite",
+      "size_bytes": 45617152
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/complex_oracle/complex_oracle.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/complex_oracle/complex_oracle.sqlite",
+      "size_bytes": 54472704
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/delivery_center/delivery_center.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/delivery_center/delivery_center.sqlite",
+      "size_bytes": 128471040
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/education_business/education_business.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/education_business/education_business.sqlite",
+      "size_bytes": 40685568
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/electronic_sales/electronic_sales.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/electronic_sales/electronic_sales.sqlite",
+      "size_bytes": 139128832
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/f1/f1.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/f1/f1.sqlite",
+      "size_bytes": 74940416
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/imdb_movies/imdb_movies.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/imdb_movies/imdb_movies.sqlite",
+      "size_bytes": 3170304
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/log/log.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/log/log.sqlite",
+      "size_bytes": 122880
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/modern_data/modern_data.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/modern_data/modern_data.sqlite",
+      "size_bytes": 105943040
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/music/music.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/music/music.sqlite",
+      "size_bytes": 1067008
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/northwind/northwind.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/northwind/northwind.sqlite",
+      "size_bytes": 245760
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/oracle_sql/oracle_sql.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/oracle_sql/oracle_sql.sqlite",
+      "size_bytes": 339968
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/school_scheduling/school_scheduling.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/school_scheduling/school_scheduling.sqlite",
+      "size_bytes": 204800
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/sqlite-sakila/sqlite-sakila.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/sqlite-sakila/sqlite-sakila.sqlite",
+      "size_bytes": 5828608
+    },
+    {
+      "archive_path": "database_files/spider2_sqlite/databases/stacking/stacking.sqlite",
+      "source_path": "/public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/databases/stacking/stacking.sqlite",
+      "size_bytes": 532480
+    }
+  ]
+}

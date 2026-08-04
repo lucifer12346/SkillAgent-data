@@ -1,0 +1,44 @@
+seed: 42
+train_n: 4
+val_n: 2
+test_n: 2
+batch_size: 2
+batch_no_improvement_patience: 10
+enable_repeated_batch_attempts: false
+num_epochs: 1
+rollout_workers: 2
+reflect_workers: 2
+repair_workers: 2
+max_agent_turns: 3
+max_schema_link_turns: 4
+max_repair_rounds: 2
+max_completion_tokens: 8192
+schema_link_max_completion_tokens: 4096
+reflect_max_completion_tokens: 8192
+repair_max_completion_tokens: 4096
+repair_guide_max_completion_tokens: 2048
+repair_distill_max_completion_tokens: 2048
+enable_guided_sql_repair: true
+enable_schema_skill_evolution: false
+exec_timeout: 60
+split_dir: ""
+test_sets_dir: ""
+skill_init: skillagent/prompts/initial_skill.md
+schema_skill_init: skillagent/prompts/initial_schema_linking_skill.md
+test_sets:
+  bird:
+    type: bird
+    limit: 2
+  ehrsql:
+    type: ehrsql
+    data_file: data/ehrsql_test.json
+    data_root: /public/home/yaozhiming/yzm/Text2SQL/data/EHRSQL
+    limit: 2
+  spider2.0:
+    type: spider2
+    data_file: /public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/test.json
+    data_root: /public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite
+    eval_metadata: /public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/spider2_sqlite_eval.jsonl
+    gold_dir: /public/home/yaozhiming/yzm/Text2SQL/data/spider2_sqlite/gold_exec_result
+    limit: 2
+out_root: ""

@@ -1,0 +1,1399 @@
+[
+  {
+    "dataset": "train",
+    "id": "train_00096",
+    "question": "Among the books published in 2004, list the name of the publisher of books with number of pages greater than 70% of the average number of pages of all books.",
+    "evidence": "published in 2004 refers to publication_date LIKE '2004%'; books with number of pages greater than 70% of the average number of pages refers to num_pages > Multiply(Avg(num_pages), 0.7); name of publisher refers to publisher_name",
+    "gold_sql": "SELECT T1.title, T2.publisher_name FROM book AS T1 INNER JOIN publisher AS T2 ON T1.publisher_id = T2.publisher_id WHERE STRFTIME('%Y', T1.publication_date) = '2004' AND T1.num_pages * 100 > ( SELECT AVG(num_pages) FROM book ) * 70",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2004%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00161",
+    "question": "In books authored by Abraham Lincoln, what is the percentage of the books published in 1992?",
+    "evidence": "\"Abraham Lincoln\" is the author_name; published in 1992 refers to publication_date LIKE '1992%'; percentage = Divide (Sum(publication_date LIKE '1992%'), Count(publication_date)) * 100",
+    "gold_sql": "SELECT CAST(SUM(CASE WHEN STRFTIME('%Y', T1.publication_date) = '1992' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM book AS T1 INNER JOIN book_author AS T2 ON T1.book_id = T2.book_id INNER JOIN author AS T3 ON T3.author_id = T2.author_id WHERE T3.author_name = 'Abraham Lincoln'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "1992%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00223",
+    "question": "Among all indian restaurants in Castro St., Mountainview, how many of them is about cookhouse in their label?",
+    "evidence": "indian restaurant refers to food_type = 'indian'; Castro St. refers to street_name = 'castro st'; Mountainview refers to city = 'mountainview'; have the word \"Indian\" in label refers to label = 'indian'",
+    "gold_sql": "SELECT COUNT(T1.id_restaurant) FROM location AS T1 INNER JOIN generalinfo AS T2 ON T1.id_restaurant = T2.id_restaurant WHERE T1.street_name = 'castro st' AND T1.city = 'mountain view' AND T2.food_type = 'indian' AND T2.label LIKE '%cookhouse%'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "mountainview"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00259",
+    "question": "Which city is Townsend at 7th Station located and how many bikes could it hold?",
+    "evidence": "Townsend at 7th Station refers to city = 'Townsend at 7th Station'; number of bikes a station can hold refers to SUM(dock_count);",
+    "gold_sql": "SELECT city, SUM(dock_count) FROM station WHERE name = 'Townsend at 7th'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "Townsend at 7th Station"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00260",
+    "question": "Among the complaints received in year 2015, what is total number of complaints timely response and closed with an explanation?",
+    "evidence": "in year 2015 refers to Date received LIKE '2015%'; timely response refers to Timely response?\" = 'Yes'; closed with an explanation refers to Company response to consumer = 'Closed with explanation'",
+    "gold_sql": "SELECT COUNT(T1.`Complaint ID`) FROM callcenterlogs AS T1 INNER JOIN events AS T2 ON T1.`Complaint ID` = T2.`Complaint ID` WHERE strftime('%Y', T1.`Date received`) = '2015' AND T2.`Timely response?` = 'Yes' AND T2.`Company response to consumer` = 'Closed with explanation'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2015%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00271",
+    "question": "Among the players that went to high school in New York and have won the MVP, what is their average height?",
+    "evidence": "high school in New York refers to highSchool like '%New York%'; won the MVP refers to award = 'Most Valuable Player'; average height = Divide (Sum(height), Count(playerID))",
+    "gold_sql": "SELECT AVG(T1.height) FROM players AS T1 INNER JOIN awards_players AS T2 ON T1.playerID = T2.playerID WHERE T2.award = 'Most Valuable Player' AND T1.birthCity = 'New York'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "%New York%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00276",
+    "question": "How many players and coaches are awarded after death?",
+    "evidence": "awarded after death refers to note = 'posthumous'",
+    "gold_sql": "SELECT COUNT(note) FROM AwardsMisc WHERE note IS NOT NULL",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "posthumous"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00290",
+    "question": "Calculate the total quantity of products with name starting with alphabet \"c\".",
+    "evidence": "name starting with alphabet \"c\" refers to Name LIKE 'C%';",
+    "gold_sql": "SELECT SUM(T2.Quantity) FROM Products AS T1 INNER JOIN Sales AS T2 ON T1.ProductID = T2.ProductID WHERE SUBSTR(T1.Name, 1, 1) = 'C'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "C%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00294",
+    "question": "What is the credit rating of the company whose average lead time is 16 days for a standard price of 18.9900 and whose last receipt date is August 27, 2011?",
+    "evidence": "last receipt date is August 17, 2011 refers to LastReceiptDate> = '2011-08-17 00:00:00' and LastReceiptDate < '2011-08-18 00:00:00';",
+    "gold_sql": "SELECT T2.CreditRating FROM ProductVendor AS T1 INNER JOIN Vendor AS T2 ON T1.BusinessEntityID = T2.BusinessEntityID WHERE T1.StandardPrice = 18.9900 AND T1.AverageLeadTime = 16 AND STRFTIME('%Y-%m-%d', T1.LastReceiptDate) = '2011-08-27'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2011-08-17 00:00:00",
+          "2011-08-18 00:00:00"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00312",
+    "question": "What are the names of the businesses that passed with conditions in May 2012?",
+    "evidence": "name of business refers to dba_name; passed with conditions refers to results = 'Pass w/ Conditions'; in May 2012 refers to inspection_date like '2012-05%'",
+    "gold_sql": "SELECT DISTINCT T2.dba_name FROM inspection AS T1 INNER JOIN establishment AS T2 ON T1.license_no = T2.license_no WHERE strftime('%Y-%m', T1.inspection_date) = '2012-05' AND T1.results = 'Pass w/ Conditions'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2012-05%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00340",
+    "question": "Name the project titles meant for school whereby 65% of the students are on reduced lunch.",
+    "evidence": "65% of the students are on reduced lunch refers to poverty_level = 'highest poverty'",
+    "gold_sql": "SELECT T1.title FROM essays AS T1 INNER JOIN projects AS T2 ON T1.projectid = T2.projectid WHERE T2.poverty_level LIKE 'highest%'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "highest poverty"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00341",
+    "question": "What is the title of the first book that was published in 1900?",
+    "evidence": "published in 1900 refers to publication_date LIKE '1900%'; first book refers to Min(publication_date)",
+    "gold_sql": "SELECT title FROM book WHERE STRFTIME('%Y', publication_date) = '1900' ORDER BY publication_date LIMIT 1",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "1900%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00382",
+    "question": "There was only one tip that user No. 69722 gave to the Yelp business, what was the ratings of that business?",
+    "evidence": "short tip refers to tip_lenghth = 'short'; user No. refers to user_id; ratings refers to stars; stars = 5 means great experience; stars = 4 means good experience; stars = 3 means average experience; stars = 2 means bad experience; stars = 1 means terrible experience;",
+    "gold_sql": "SELECT T2.stars FROM Tips AS T1 INNER JOIN Business AS T2 ON T1.business_id = T2.business_id WHERE T1.user_id = 69722",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "short"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00403",
+    "question": "How many restaurants failed the inspection in April 2010?",
+    "evidence": "restaurant refers to facility_type = 'Restaurant'; failed the inspection refers to results = 'Fail'; in April 2010 refers to inspection_date like '2010-04%'",
+    "gold_sql": "SELECT COUNT(DISTINCT T1.license_no) FROM establishment AS T1 INNER JOIN inspection AS T2 ON T1.license_no = T2.license_no WHERE strftime('%Y-%m', T2.inspection_date) = '2010-04' AND T1.facility_type = 'Restaurant' AND T2.results = 'Fail'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2010-04%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00414",
+    "question": "What is the type of store located in the city with the highest amount of water area?",
+    "evidence": "type of store in City refers to Type = 'City'; highest amount of water area refers to Max(Water Area)",
+    "gold_sql": "SELECT CASE WHEN MAX(`Water Area`) THEN Type END FROM `Store Locations`",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "City"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00437",
+    "question": "Which district did the review on 2018/9/11 come from? Give the name of the city.",
+    "evidence": "on 2018/9/11 refers to Date = '2017-07-22';",
+    "gold_sql": "SELECT T2.district_id, T2.city FROM reviews AS T1 INNER JOIN district AS T2 ON T1.district_id = T2.district_id WHERE T1.Date = '2018-09-11'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2017-07-22"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00438",
+    "question": "Which player from Wake Forest college did the most offensive rebounds than defensive rebounds in the all-star? Please mention the full name of the player including the middle name if have any.",
+    "evidence": "Wake Forest college refers to highSchool = 'Wake Forest college'; did the most offensive rebounds than defensive rebounds refers to max(subtract(sum(oRebounds), sum(dRebounds))); full name refers to first_name, middle_name, last_name",
+    "gold_sql": "SELECT T1.firstName, T1.middleName, T1.lastName FROM players AS T1 INNER JOIN player_allstar AS T2 ON T1.playerID = T2.playerID WHERE T1.college = 'Wake Forest' AND T2.o_rebounds > T2.d_rebounds",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "Wake Forest college"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00441",
+    "question": "Was Anthony Azzara's role in episode tt0629204 displayed in the credits at the end of the episode?",
+    "evidence": "episode tt0629204 refers to episode_id = 'tt0629204'; credited refers to credited = 'true'; not credited refers to credited = ''",
+    "gold_sql": "SELECT T1.credited FROM Credit AS T1 INNER JOIN Person AS T2 ON T2.person_id = T1.person_id WHERE T2.name = 'Anthony Azzara' AND T1.episode_id = 'tt0629204'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "true"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00471",
+    "question": "How many times was Elly Koss given a care plan between 1/11/2009 and 10/23/2010?",
+    "evidence": "between 1/11/2009 and 10/23/2010 refers to careplans.START between '2009-11-1' and '2010-10-23';",
+    "gold_sql": "SELECT COUNT(T2.PATIENT) FROM patients AS T1 INNER JOIN careplans AS T2 ON T1.patient = T2.PATIENT WHERE T1.first = 'Elly' AND T1.last = 'Koss' AND T2.START BETWEEN '2009-01-11' AND '2010-10-23'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2009-11-1"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00487",
+    "question": "Please list the awards the players who died in Arlington have won.",
+    "evidence": "died in Arlington refers to deathCity = 'Arlington'",
+    "gold_sql": "SELECT T2.award FROM Master AS T1 INNER JOIN AwardsPlayers AS T2 ON T1.playerID = T2.playerID WHERE T1.deathCity = 'Kemptville'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "Arlington"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00490",
+    "question": "What is the total value of Argentum coined traded in the past 24 hours on 2016/10/11.",
+    "evidence": "total value in the past 24 hours refers to volume_24h; on 11/10/16 refers to date = '2016-11-10'",
+    "gold_sql": "SELECT T2.volume_24h FROM coins AS T1 INNER JOIN historical AS T2 ON T1.id = T2.coin_id WHERE T1.name = 'Argentum' AND T2.date = '2016-10-11'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2016-11-10"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00537",
+    "question": "Which country have the highest CO2 emissions in 1960?",
+    "evidence": "which country refers to countryname; the highest CO2 emissions refers to max(value where indicatorname = 'CO2 emissions (metric tons per capita)'); in 1960 refers to year = '1970'",
+    "gold_sql": "SELECT CountryName FROM Indicators WHERE Year = 1960 AND IndicatorName = 'CO2 emissions (metric tons per capita)' ORDER BY Value DESC LIMIT 1",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "1970"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00541",
+    "question": "Which team did the MVP of 1997 NBA season play in?",
+    "evidence": "team refers to tmID; MVP refers to award like '%MVP'; 1997 refers to year = 1997; NBA refers to lgID = 'NBA'",
+    "gold_sql": "SELECT DISTINCT T3.tmID FROM players_teams AS T1 INNER JOIN awards_players AS T2 ON T1.playerID = T2.playerID INNER JOIN teams AS T3 ON T1.tmID = T3.tmID AND T1.year = T3.year WHERE T2.year = 1997 AND T2.award = 'Finals MVP' LIMIT 1",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "%MVP",
+          "NBA"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00542",
+    "question": "What is the most common keyword among all the movies released in 2006?",
+    "evidence": "most common keyword refers to max(count(keyword_name)); movies released in 2006 refers to release_date LIKE '%2006%'",
+    "gold_sql": "SELECT T3.keyword_name FROM movie AS T1 INNER JOIN movie_keywords AS T2 ON T1.movie_id = T2.movie_id INNER JOIN keyword AS T3 ON T2.keyword_id = T3.keyword_id WHERE T1.release_date LIKE '2006%' GROUP BY T3.keyword_name ORDER BY COUNT(T3.keyword_name) DESC LIMIT 1",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "%2006%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00573",
+    "question": "Which item was shipped on 3/4/2013 and scheduled for same day delivery in the South region?",
+    "evidence": "shipped on 3/4/2013 refers to \"Order Date\" = date('2013-03-04'); same day delivery refers to \"Ship Mode\" = 'Same Day'; item refers to \"Product Name\"",
+    "gold_sql": "SELECT T2.`Product Name` FROM south_superstore AS T1 INNER JOIN product AS T2 ON T1.`Product ID` = T2.`Product ID` WHERE T1.`Ship Date` = '2013-03-04' AND T2.Region = 'South' AND T1.`Order Date` = '2013-03-04'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "Same Day"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00595",
+    "question": "How many post offices are there in New York?",
+    "evidence": "\"New York\" refers to state = 'NY' and name = 'New York'; 'Post Office' is the type",
+    "gold_sql": "SELECT COUNT(DISTINCT T2.zip_code) FROM state AS T1 INNER JOIN zip_data AS T2 ON T1.abbreviation = T2.state WHERE T1.abbreviation = 'NY' AND T2.type = 'Post Office'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "New York"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00625",
+    "question": "How many transactions were paid through MasterCard in 2014?",
+    "evidence": "MasterCard refers to CreditCardType = 'MasterCard'; in 2014 refers to TransactionDate > = '2014-01-01' AND TransactionDate < = '2014-12-31';",
+    "gold_sql": "SELECT COUNT(TransactionID) FROM `transaction` WHERE CreditCardType = 'MasterCard' AND TransactionDate LIKE '2014%'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2014-01-01",
+          "2014-12-31"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00640",
+    "question": "What are the keywords of the episodes which have the air date in 2008?",
+    "evidence": "have air date in 2008 refers to air_date LIKE '2008%'",
+    "gold_sql": "SELECT T2.keyword FROM Episode AS T1 INNER JOIN Keyword AS T2 ON T1.episode_id = T2.episode_id WHERE SUBSTR(T1.air_date, 1, 4) = '2008';",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2008%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00655",
+    "question": "List the names of all players from Avangard Omsk who played in the 2000-2001 season of the International league that have no goals in draft year.",
+    "evidence": "names of the players refers to PlayerName; Avangard Omsk refers to TEAM = 'Avangard Omsk'; International league refers to LEAGUE = 'International'; no goals in draft year refers to G = 0; 2000-2001 season refers to SEASON = '2000-2001';",
+    "gold_sql": "SELECT T2.PlayerName FROM SeasonStatus AS T1 INNER JOIN PlayerInfo AS T2 ON T1.ELITEID = T2.ELITEID WHERE T1.SEASON = '2000-2001' AND T1.LEAGUE = 'International' AND T1.TEAM = 'Czech Republic (all)' AND T1.G = 0",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "Avangard Omsk"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00667",
+    "question": "How many French customers shipped 2 orders which have been cancelled?",
+    "evidence": "French is a nationality of country = 'France'; cancelled orders refers to status = 'Cancelled';",
+    "gold_sql": "SELECT COUNT(T2.country) FROM orders AS T1 INNER JOIN customers AS T2 ON T1.customerNumber = T2.customerNumber WHERE T1.status = 'Shipped' AND T2.country = 'France' GROUP BY T2.customerNumber HAVING COUNT(T1.status) = 2",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "Cancelled"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00670",
+    "question": "What was the average temperature difference between store number 18 and 19 on 16 September 2022?",
+    "evidence": "store number 18 refers to store_nbr = 18; store number 19 refers to store_nbr = 19; on 16 September 2022 refers to date = '2022-09-16'; average temperature difference = Subtract(tavg where store_nbr = 18, tavg where store_nbr = 19)",
+    "gold_sql": "SELECT SUM(CASE WHEN T1.store_nbr = 18 THEN T2.tavg ELSE 0 END) - SUM(CASE WHEN T1.store_nbr = 19 THEN T2.tavg ELSE 0 END) FROM relation AS T1 INNER JOIN weather AS T2 ON T1.station_nbr = T2.station_nbr WHERE T2.`date` = '2012-09-16'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2022-09-16"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00698",
+    "question": "What is the percentage of severe cases that are related to sexual assault?",
+    "evidence": "related to sexual assault refers to primary_description = 'CRIME SEXUAL ASSAULT'; severe case refers to index_code = 'I'; percentage = Divide (Count (iucr_no where primary_description = 'CRIME SEXUAL ASSAULT'), Count (iucr_no)) * 100",
+    "gold_sql": "SELECT CAST(SUM(CASE WHEN primary_description = 'CRIM SEXUAL ASSAULT' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM IUCR WHERE index_code = 'I'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "CRIME SEXUAL ASSAULT"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00718",
+    "question": "What medication did Elly Koss take when she had Streptococcal sore throat?",
+    "evidence": "medication refers to DESCRIPTION from medications; Streptococcal sore throat refers to REASONDESCRIPTION like 'Streptococcal sore throat%';",
+    "gold_sql": "SELECT T2.description FROM patients AS T1 INNER JOIN medications AS T2 ON T1.patient = T2.PATIENT WHERE T1.first = 'Elly' AND T1.last = 'Koss' AND T2.reasondescription = 'Streptococcal sore throat (disorder)'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "Streptococcal sore throat%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00725",
+    "question": "List the page number for Catalan language wikipedia pages containing the word 'Art' in the page title.",
+    "evidence": "containing the word 'Art' refers to title LIKE '% Art %'",
+    "gold_sql": "SELECT page FROM pages WHERE title LIKE 'Art%' OR title LIKE '%Art%' OR title LIKE '%Art'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "% Art %"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00733",
+    "question": "How many transactions were made in Sac State Union using the American Express credit card in 2014?",
+    "evidence": "Sac State Union refers to LocationName = 'Sac State Union'; American Express credit card refers to CreditCardType = 'American Express'; in 2014 refers to TransactionDate LIKE '2014%';",
+    "gold_sql": "SELECT COUNT(T1.TransactionID) FROM `transaction` AS T1 INNER JOIN location AS T2 ON T1.LocationID = T2.LocationID WHERE T2.LocationName = 'Sac State Union' AND T1.CreditCardType = 'American Express' AND T1.TransactionDate BETWEEN '2014-01-01' AND '2014-12-31'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2014%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00740",
+    "question": "How many foodborne illness investigations were done in 2014?",
+    "evidence": "foodborne illness investigations refer to inspections where type = 'Foodborne Illness Investigation'; investigations in 2014 refers to date between '2014-01-01' and '2014-12-31';",
+    "gold_sql": "SELECT COUNT(business_id) FROM inspections WHERE STRFTIME('%Y', `date`) = '2014' AND type = 'Foodborne Illness Investigation'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2014-01-01",
+          "2014-12-31"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00749",
+    "question": "How many inspections were sanitarian Joshua Rosa responsible for in 2010?",
+    "evidence": "in 2010 refers to inspection_date like '2010%'",
+    "gold_sql": "SELECT COUNT(T2.inspection_id) FROM employee AS T1 INNER JOIN inspection AS T2 ON T1.employee_id = T2.employee_id WHERE strftime('%Y', T2.inspection_date) = '2010' AND T1.first_name = 'Joshua' AND T1.last_name = 'Rosa'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2010%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00757",
+    "question": "Count the active businesses that has an attribute of BYOB with high review count.",
+    "evidence": "active business ID refers to active = 'true'; category of Food refers to category_name = 'Food'; attribute of BYOB refers to attribute_name = 'BYOB'; high review count refers to review_count = 'High'",
+    "gold_sql": "SELECT COUNT(DISTINCT T1.business_id) FROM Business AS T1 INNER JOIN Business_Attributes AS T2 ON T1.business_id = T2.business_id INNER JOIN Attributes AS T3 ON T2.attribute_id = T3.attribute_id WHERE T3.attribute_name = 'BYOB' AND T1.review_count = 'High' AND T1.active = 'true'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "Food"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00801",
+    "question": "Among the facilities that had undergone at least one inspection in 2010, how many of them have the most serious food safety issues?",
+    "evidence": "in 2010 refers to inspection_date like '2010%'; the most serious food safety issues refers to risk_level = 3",
+    "gold_sql": "SELECT COUNT(DISTINCT T2.license_no) FROM inspection AS T1 INNER JOIN establishment AS T2 ON T1.license_no = T2.license_no WHERE strftime('%Y', T1.inspection_date) = '2010' AND T2.risk_level = 3",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2010%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00806",
+    "question": "How many products using \"roadster_black_small.gif\" as the thumbnail photo?",
+    "evidence": "products using roadster_black_small.gif as the thumbnail photo refers to ThumbnailPhotoFileName = 'roadster_black_small.gif';",
+    "gold_sql": "SELECT COUNT(DISTINCT T2.ProductID) FROM ProductPhoto AS T1 INNER JOIN ProductProductPhoto AS T2 ON T1.ProductPhotoID = T2.ProductPhotoID WHERE T1.LargePhotoFileName = 'roadster_black_large.gif'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "roadster_black_small.gif"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00841",
+    "question": "On what episode did Julia Roberts win the \"Outstanding Guest Actress in a Drama Series\" award during the 1999 Primetime Emmy Awards? Tell me her role.",
+    "evidence": "win refers to result = 'Winner'; the \"Outstanding Guest Actress in a Drama Series\" award refers to award = 'Outstanding Guest Actress in a Drama Series'; the 1999 refers to year = 1999; Primetime Emmy Awards refers to organization = 'Primetime Emmy Awards'",
+    "gold_sql": "SELECT T3.episode_id, T2.role FROM Person AS T1 INNER JOIN Award AS T2 ON T1.person_id = T2.person_id INNER JOIN Episode AS T3 ON T2.episode_id = T3.episode_id WHERE T2.year = 1999 AND T2.award = 'Outstanding Guest Actress in a Drama Series' AND T2.organization = 'Primetime Emmy Awards' AND T1.name = 'Julia Roberts' AND T2.result = 'Nominee'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "Winner"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00848",
+    "question": "How many games did team of the scoring champion win in 2001 NBA season?",
+    "evidence": "the scoring champion refers to max(won); 2001 refers to year = 2001; NBA refers to lgID = 'NBA'",
+    "gold_sql": "SELECT T2.W FROM teams AS T1 INNER JOIN series_post AS T2 ON T1.tmID = T2.tmIDLoser AND T1.year = T2.year WHERE T2.year = 2001 ORDER BY T1.o_fgm DESC LIMIT 1",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "NBA"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00861",
+    "question": "Please list any two clients with their full names who have been tagged as \"Older American\" by the company without seeking their permission.",
+    "evidence": "full names = first, middle, last; without seeking their permission refers to \"Consumer consent provided?\" in (null, 'N/A' or 'empty');",
+    "gold_sql": "SELECT T1.first, T1.middle, T1.last FROM client AS T1 INNER JOIN events AS T2 ON T1.client_id = T2.Client_ID WHERE T2.Tags = 'Older American' AND T2.`Consumer consent provided?` IN (NULL, 'N/A', '') LIMIT 2",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "empty"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "train",
+    "id": "train_00932",
+    "question": "What is the cost of the slowest and least expensive shipping method?",
+    "evidence": "slowest and least expesive method refers to shipping_method = 'Standard'",
+    "gold_sql": "SELECT method_name FROM shipping_method ORDER BY cost ASC LIMIT 1",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "Standard"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00104",
+    "question": "How many Brazilian Portuguese translated sets are inside the Commander block?",
+    "evidence": "Commander block refer to block = 'Commander'; sets refer to code = setCode; Portuguese refer to language = 'Portuguese (Brasil)'",
+    "gold_sql": "SELECT COUNT(T1.id) FROM sets AS T1 INNER JOIN set_translations AS T2 ON T1.code = T2.setCode WHERE T2.language = 'Portuguese (Brazil)' AND T1.block = 'Commander'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "Portuguese (Brasil)"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00108",
+    "question": "From laboratory examinations in 1991, what is the average hematoclit level that is lower than the normal range.",
+    "evidence": "laboratory examinations in 1991 refers to Date like '1991%'; average hematoclit level = AVG(HCT); hematoclit level that is lower than the normal range refers to HCT < 29;",
+    "gold_sql": "SELECT AVG(T2.HCT) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.HCT < 29 AND STRFTIME('%Y', T2.Date) = '1991'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "1991%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00115",
+    "question": "Among the patients with normal anti-SM, how many of them does not have thrombosis?",
+    "evidence": "normal anti-SM refers to SM IN('-', '+-'); SM = 'negative' means '-'; SM = '0' means '+-'; SM = '1' means '+'; does not have thrombosis refers to Thrombosis = 0;",
+    "gold_sql": "SELECT COUNT(T1.ID) FROM Examination AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.SM IN ('negative','0') AND T1.Thrombosis = 0",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "+-",
+          "-"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00134",
+    "question": "How was the build up play dribbling class for \"LEI\" on 2015/9/10?",
+    "evidence": "\"LEI\" refers to team_short_name = 'LEI'; on 2015/9/10 refers to  date = '2015-09-10 00:00:00'",
+    "gold_sql": "SELECT t2.buildUpPlayDribblingClass FROM Team AS t1 INNER JOIN Team_Attributes AS t2 ON t1.team_api_id = t2.team_api_id WHERE t1.team_short_name = 'LEI' AND SUBSTR(t2.`date`, 1, 10) = '2015-09-10'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2015-09-10 00:00:00"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00162",
+    "question": "What was the chance creation crossing class for \"Hull City\" on 2010/2/22?",
+    "evidence": "\"Hull City\" refers to team_long_name = 'Hull City'; on 2010/2/22 refers to date = '2010-02-22 00:00:00'",
+    "gold_sql": "SELECT t2.chanceCreationCrossingClass FROM Team AS t1 INNER JOIN Team_Attributes AS t2 ON t1.team_api_id = t2.team_api_id WHERE t1.team_long_name = 'Hull City' AND SUBSTR(t2.`date`, 1, 10) = '2010-02-22'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2010-02-22 00:00:00"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00179",
+    "question": "How many posts were created on 21st July, 2010?",
+    "evidence": "created on 21st July, 2010 refers to CreationDate BETWEEN '2010-07-21 00:00:00' and '2012-07-21 23:59:59';",
+    "gold_sql": "SELECT COUNT(id) FROM postHistory WHERE date(CreationDate) = '2010-07-21'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2010-07-21 00:00:00",
+          "2012-07-21 23:59:59"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00239",
+    "question": "Determine the bond type that is formed in the chemical compound containing element Carbon.",
+    "evidence": "Carbon refers to element = 'c'; double bond refers to bond_type = ' = '; single bond refers to bond_type = '-'; triple bond refers to bond_type = '#';",
+    "gold_sql": "SELECT DISTINCT T2.bond_type FROM atom AS T1 INNER JOIN bond AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.element = 'c'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "#",
+          "-"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00277",
+    "question": "What was the potiential for Francesco Parravicini on 2010/8/30?",
+    "evidence": "Francesco Parravicini refers to player_name = 'Francesco Parravicini'; on 2010/8/30 refers to date = '2010-08-30 00:00:00'",
+    "gold_sql": "SELECT t2.potential FROM Player AS t1 INNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id WHERE SUBSTR(t2.`date`, 1, 10) = '2010-08-30' AND t1.player_name = 'Francesco Parravicini'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2010-08-30 00:00:00"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00347",
+    "question": "What is the type of the bond which is presenting the connection between two atoms TR000_1 and TR000_2?",
+    "evidence": "type of bond refers to bond_type; double bond refers to bond_type = ' = '; single bond refers to bond_type = '-'; triple bond refers to bond_type = '#';",
+    "gold_sql": "SELECT T1.bond_type FROM bond AS T1 INNER JOIN connected AS T2 ON T1.bond_id = T2.bond_id WHERE T2.atom_id = 'TR000_1' AND T2.atom_id2 = 'TR000_2'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "#",
+          "-"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00411",
+    "question": "Who was the player that got the lap time of 0:01:27 in the race No. 161? Show his introduction website.",
+    "evidence": "player and driver are synonyms; the lap time of 0:0M:SS refers to lapTime.time LIKE 'M:SS%';race number refers to raceId; introduction website of the drivers refers to url;",
+    "gold_sql": "SELECT DISTINCT T2.forename, T2.surname, T2.url FROM lapTimes AS T1 INNER JOIN drivers AS T2 ON T2.driverId = T1.driverId WHERE T1.raceId = 161 AND T1.time LIKE '1:27%'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "M:SS%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00458",
+    "question": "How many connections does the atom 19 have?",
+    "evidence": "connections refers to bond_id; atom 19 refers to atom_id like 'TR%_19';",
+    "gold_sql": "SELECT COUNT(T.bond_id) FROM connected AS T WHERE SUBSTR(T.atom_id, -2) = '19'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "TR%_19"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00474",
+    "question": "What's the unconverted mana cost of the card \"Ancestor's Chosen\"?",
+    "evidence": "card \"Ancestor's Chosen\" refers to name = 'Ancestor`s Chosen'",
+    "gold_sql": "SELECT DISTINCT manaCost FROM cards WHERE name = 'Ancestor''s Chosen'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "Ancestor`s Chosen"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00496",
+    "question": "Please list the superhero names of all the superheroes that have blue eyes and blond hair.",
+    "evidence": "blue eyes refers to colour = 'Blue' and eye_colour_id = colour.id; blond hair refers to colour = 'Blond' and hair_colour_id = colour.id; super power of \"Agility\" refers to power_name = 'Agility'",
+    "gold_sql": "SELECT T1.superhero_name FROM superhero AS T1 INNER JOIN colour AS T2 ON T1.eye_colour_id = T2.id INNER JOIN colour AS T3 ON T1.hair_colour_id = T3.id WHERE T2.colour = 'Blue' AND T3.colour = 'Blond'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "Agility"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00501",
+    "question": "How many patients have a normal level of anti-ribonuclear protein and have been admitted to the hospital?",
+    "evidence": "normal level of anti-ribonuclear protein refers to RNP = '-', '+-'; And'-' means 'negative'; '+-' refers to '0'; admitted to the hospital refers to Admission = '+'; Should consider DISTINCT in the final result;",
+    "gold_sql": "SELECT COUNT(DISTINCT T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.RNP = 'negative' OR T2.RNP = '0' AND T1.Admission = '+'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "-"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00538",
+    "question": "For the patient who was diagnosed with SLE on 1994/2/19, what was his/her anti-Cardiolipin antibody concentration status on 1993/11/12?",
+    "evidence": "diagnosed with SLE refers to Diagnosis = 'SLE'; 1994/2/19 refers to Description = '1994-02-19'; anti-Cardiolipin refers to aCL IgM; 1993/11/12 refers to Examination Date = '1993/11/12'",
+    "gold_sql": "SELECT `aCL IgA`, `aCL IgG`, `aCL IgM` FROM Examination WHERE ID IN ( SELECT ID FROM Patient WHERE Diagnosis = 'SLE' AND Description = '1994-02-19' ) AND `Examination Date` = '1993-11-12'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "1993/11/12"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00634",
+    "question": "What was the build up play speed class for \"Willem II\" on 2011/2/22?",
+    "evidence": "\"Willem II\" refers to team_long_name = 'Willem II'; on 2011/2/22 refers to date = '2012-02-22'",
+    "gold_sql": "SELECT t2.buildUpPlaySpeedClass FROM Team AS t1 INNER JOIN Team_Attributes AS t2 ON t1.team_api_id = t2.team_api_id WHERE t1.team_long_name = 'Willem II' AND SUBSTR(t2.`date`, 1, 10) = '2011-02-22'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2012-02-22"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00670",
+    "question": "For patients with alkaliphophatase (ALP) within normal range, were they treated as inpatient or outpatient?",
+    "evidence": "alkaliphophatase (ALP) within normal range refers to ALP < 300; inpatient refers to admission = '+'; outpatient refers to admission = '-'",
+    "gold_sql": "SELECT T1.Admission FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.ALP < 300",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "+",
+          "-"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00673",
+    "question": "What is his number of the driver who finished 0:01:54 in the Q3 of qualifying race No.903?",
+    "evidence": "race number refers to raceId; finished 0:0M:SS in the Q3 refers to q3 LIKE 'M:SS%'",
+    "gold_sql": "SELECT T2.number FROM qualifying AS T1 INNER JOIN drivers AS T2 ON T2.driverId = T1.driverId WHERE T1.raceId = 903 AND T1.q3 LIKE '1:54%'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "M:SS%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00692",
+    "question": "How many patients have a normal anti-SSB and are diagnosed with SLE in the examination?",
+    "evidence": "normal anti-SSB refers to SSB IN('-', '+-'); '-' is expressed as 'negative' and '+-' is expressed as '0' in the database ; diagnosed with SLE refers to Diagnosis = 'SLE'; Should compute the number of distinct ones",
+    "gold_sql": "SELECT COUNT(DISTINCT T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.SSB = 'negative' OR '0' AND T1.Diagnosis = 'SLE'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "+-",
+          "-"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00763",
+    "question": "For the year that concluded on December 31, 1998, how many male patients on average were tested in the lab each month?",
+    "evidence": "the year that concluded on December 31, 1998 refers to Date BETWEEN '1998-01-01' AND '1998-12-31'; male refers to SEX = 'M'; calculation = DIVIDE(COUNT(ID), 12)",
+    "gold_sql": "SELECT CAST(COUNT(T1.ID) AS REAL) / 12 FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE STRFTIME('%Y', T2.Date) = '1998' AND T1.SEX = 'M'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "1998-01-01",
+          "1998-12-31"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00835",
+    "question": "List the bond type and the bond ID of the atom 45.",
+    "evidence": "bond ID of atom 45 refers to SUBSTR(atom_id, 7, 2) + 0 = 45; double bond refers to bond_type = ' = '; single bond refers to bond_type = '-'; triple bond refers to bond_type = '#';",
+    "gold_sql": "SELECT T1.bond_type, T1.bond_id FROM bond AS T1 INNER JOIN connected AS T2 ON T1.bond_id = T2.bond_id WHERE SUBSTR(T2.atom_id, 7, 2) = '45'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "#",
+          "-"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00886",
+    "question": "In the race No. 45, for the driver who had the Q3 time as 0:01:33, what is his abbreviated code?",
+    "evidence": "race number refers to raceId; had the Q3 time as 0:0M:SS refers to q3 LIKE 'M:SS%'",
+    "gold_sql": "SELECT T2.code FROM qualifying AS T1 INNER JOIN drivers AS T2 ON T2.driverId = T1.driverId WHERE T1.raceId = 45 AND T1.q3 LIKE '1:33%'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "M:SS%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00892",
+    "question": "What is the average height of players born between 1990 and 1995?",
+    "evidence": "average height = DIVIDE(SUM(height), COUNT(id)); players born between 1990 and 1995 refers to birthday > = '1990-01-01 00:00:00' AND birthday < '1996-01-01 00:00:00';",
+    "gold_sql": "SELECT SUM(height) / COUNT(id) FROM Player WHERE SUBSTR(birthday, 1, 4) BETWEEN '1990' AND '1995'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "1990-01-01 00:00:00",
+          "1996-01-01 00:00:00"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00913",
+    "question": "What is the football player Francois Affolter header's finishing rate on 18/09/2014?",
+    "evidence": "header's finishing rate refers to heading_accuracy; on 18/09/2014 refers to date = '2014-09-18 00:00:00';",
+    "gold_sql": "SELECT t2.heading_accuracy FROM Player AS t1 INNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id WHERE t1.player_name = 'Francois Affolter' AND SUBSTR(t2.`date`, 1, 10) = '2014-09-18'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2014-09-18 00:00:00"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_00948",
+    "question": "What was the overall rating for Aaron Mooy on 2016/2/4?",
+    "evidence": "Aaron Mooy refers to player_name = 'Aaron Mooy'; on 2016/2/4 refers to date LIKE '2016-02-04%';",
+    "gold_sql": "SELECT t2.overall_rating FROM Player AS t1 INNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id WHERE SUBSTR(t2.`date`, 1, 10) = '2016-02-04' AND t1.player_name = 'Aaron Mooy'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2016-02-04%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_01000",
+    "question": "How many cards available in paper have a positive starting maximum hand size?",
+    "evidence": "available in paper refers to availability like '%paper%'; have a positive starting maximum hand size refers to hand = '3'",
+    "gold_sql": "SELECT SUM(CASE WHEN availability = 'paper' AND hAND = '3' THEN 1 ELSE 0 END) FROM cards",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "%paper%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_01014",
+    "question": "For patient born between Year 1930 to 1940, how many percent of them were inpatient?",
+    "evidence": "patient born between Year 1930 to 1940 refers to year(Birthday) BETWEEN '1930-01-01' AND '1940-12-31'; inpatient refers to Admission = '+'",
+    "gold_sql": "SELECT CAST(SUM(CASE WHEN Admission = '+' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM Patient WHERE STRFTIME('%Y', Birthday) BETWEEN '1930' AND '1940'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "1930-01-01",
+          "1940-12-31"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_01049",
+    "question": "For the teams with normal build-up play dribbling class in 2014, List the names of the teams with less than average chance creation passing, in descending order of chance creation passing.",
+    "evidence": "normal build-up play dribbling class refers to buildUpPlayDribblingClass = 'Normal'; in 2014 refers to date > = '2014-01-01 00:00:00' AND date < = '2014-01-31 00:00:00'; names of the teams refers to team_long_name; less than average chance creation passing = DIVIDE(SUM(chanceCreationPassing), COUNT(id)) > chanceCreationPassing;",
+    "gold_sql": "SELECT t3.team_long_name FROM Team AS t3 INNER JOIN Team_Attributes AS t4 ON t3.team_api_id = t4.team_api_id WHERE t4.buildUpPlayDribblingClass = 'Normal' AND t4.chanceCreationPassing < ( SELECT CAST(SUM(t2.chanceCreationPassing) AS REAL) / COUNT(t1.id) FROM Team AS t1 INNER JOIN Team_Attributes AS t2 ON t1.team_api_id = t2.team_api_id WHERE t2.buildUpPlayDribblingClass = 'Normal' AND SUBSTR(t2.`date`, 1, 4) = '2014') ORDER BY t4.chanceCreationPassing DESC",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2014-01-01 00:00:00",
+          "2014-01-31 00:00:00"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_01068",
+    "question": "Tell the defensive work rate for Kevin Berigaud on 2013/2/22.",
+    "evidence": "Kevin Berigaud refers to player_name = 'Kevin Berigaud'; on 2013/2/22 refers to date = '2013-02-22 00:00:00'",
+    "gold_sql": "SELECT t2.defensive_work_rate FROM Player AS t1 INNER JOIN Player_Attributes AS t2 ON t1.player_fifa_api_id = t2.player_fifa_api_id WHERE SUBSTR(t2.`date`, 1, 10) = '2013-02-22' AND t1.player_name = 'Kevin Berigaud'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2013-02-22 00:00:00"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_01172",
+    "question": "List all patients who were followed up at the outpatient clinic who underwent a laboratory test in October 1991 and had a total blood bilirubin level within the normal range.",
+    "evidence": "followed up at the outpatient clinic refers to Admission = '-'; laboratory test in April 1981 refers to Date like '1991-10%'; blood bilirubin level within the normal range refers to T-BIL < 2.0;",
+    "gold_sql": "SELECT DISTINCT T1.ID FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T1.Admission = '-' AND T2.`T-BIL` < 2.0 AND T2.Date LIKE '1991-10-%'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "1991-10%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_01175",
+    "question": "What is the status of the event which bought \"Post Cards, Posters\" on 2019/8/20?",
+    "evidence": "'Post Cards, Posters' is an expense description; on 2019/8/20 refers to expense_date = '2019-8-20'; status of event refers to event_status",
+    "gold_sql": "SELECT T1.event_status FROM budget AS T1 INNER JOIN expense AS T2 ON T1.budget_id = T2.link_to_budget WHERE T2.expense_description = 'Post Cards, Posters' AND T2.expense_date = '2019-08-20'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2019-8-20"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_01189",
+    "question": "How many patients with a normal anti-SSA came to the hospital before 2000?",
+    "evidence": "normal anti-SSA refers to SSA IN('-','+-'); came to the hospital before 2000 refers to YEAR(`First Date`) < 2000; Should compute the number of distinct ones",
+    "gold_sql": "SELECT COUNT(DISTINCT T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.SSA IN ('negative', '0') AND STRFTIME('%Y', T2.Date) < '2000'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "+-",
+          "-"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_01199",
+    "question": "What is the bond type of TR007_4_19?",
+    "evidence": "double bond refers to bond_type = ' = '; single bond refers to bond_type = '-'; triple bond refers to bond_type = '#';",
+    "gold_sql": "SELECT T.bond_type FROM bond AS T WHERE T.bond_id = 'TR007_4_19'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "#",
+          "-"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_01213",
+    "question": "State the chance creation passing class for \"PEC Zwolle\" on 2013/9/20.",
+    "evidence": "\"PEC Zwolle\" refers to team_long_name = 'PEC Zwolle'; on 2013/9/20 refers to date = '2013-09-20 00:00:00'",
+    "gold_sql": "SELECT t2.chanceCreationPassingClass FROM Team AS t1 INNER JOIN Team_Attributes AS t2 ON t1.team_api_id = t2.team_api_id WHERE t1.team_long_name = 'PEC Zwolle' AND SUBSTR(t2.`date`, 1, 10) = '2013-09-20'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2013-09-20 00:00:00"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_01248",
+    "question": "List down the bond type for molecules from molecule id TR000 to TR050.",
+    "evidence": "double bond refers to bond_type = ' = '; single bond refers to bond_type = '-'; triple bond refers to bond_type = '#';",
+    "gold_sql": "SELECT T2.molecule_id, T2.bond_type FROM molecule AS T1 INNER JOIN bond AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.molecule_id BETWEEN 'TR000' AND 'TR050'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "#",
+          "-"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_01272",
+    "question": "How many bonds which involved atom 12 does molecule TR009 have?",
+    "evidence": "TR009 is the molecule id;  involved atom 12 refers to atom_id = 'TR009_12' or atom_id2 = 'TR009_12'",
+    "gold_sql": "SELECT COUNT(T2.bond_id) FROM bond AS T1 INNER JOIN connected AS T2 ON T1.bond_id = T2.bond_id WHERE T1.molecule_id = 'TR009' AND T2.atom_id = T1.molecule_id || '_1' AND T2.atom_id2 = T1.molecule_id || '_2'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "TR009_12"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_01298",
+    "question": "Among black card borders, which card has full artwork?",
+    "evidence": "white card borders refers to borderColor = 'white'; has full artwork refers to isFullArt = 1",
+    "gold_sql": "SELECT id FROM cards WHERE borderColor = 'black' AND isFullArt = 1",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "white"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_01339",
+    "question": "For the players who had a 77 points overall rating on 2016/6/23, who was the oldest? Give the name of the player.",
+    "evidence": "77 points overall rating refers to overall_rating = 77; on 2016/6/23 refers to date LIKE '2016-06-23%'; The larger the birthday value, the younger the person is, and vice versa;",
+    "gold_sql": "SELECT t1.player_name FROM Player AS t1 INNER JOIN Player_Attributes AS t2 ON t1.player_api_id = t2.player_api_id WHERE SUBSTR(t2.`date`, 1, 10) = '2016-06-23' AND t2.overall_rating = 77 ORDER BY t1.birthday ASC LIMIT 1",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2016-06-23%"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_01464",
+    "question": "What are the bond type for atoms with element Tin?",
+    "evidence": "element Tin refers to element = 'sn'; double bond refers to bond_type = ' = '; single bond refers to bond_type = '-'; triple bond refers to bond_type = '#'",
+    "gold_sql": "SELECT DISTINCT T3.bond_type FROM atom AS T1 INNER JOIN connected AS T2 ON T1.atom_id = T2.atom_id INNER JOIN bond AS T3 ON T3.bond_id = T2.bond_id WHERE T1.element = 'sn'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "#",
+          "-"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_01474",
+    "question": "Among the patients who has a normal level of anti-centromere and a normal level of anti-SSB, how many of them are male?",
+    "evidence": "normal level of anti-centromere refers to CENTROMEA IN('-', '+-'); normal level of anti-SSB refers to SSB IN('-', '+-'); male refers to Sex = 'M'; Should consider DISTINCT in the final result;",
+    "gold_sql": "SELECT COUNT(DISTINCT T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.CENTROMEA IN ('negative', '0') AND T2.SSB IN ('negative', '0') AND T1.SEX = 'M'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "+-",
+          "-"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_01485",
+    "question": "User No.3025 gave a comment at 20:29:39 on 2014/4/23 to a post, how many favorite counts did that post get?",
+    "evidence": "user no. 3025 refers to UserId = '3025'; comment at 20:29:39 on 2014/4/23 refers to CreationDate = '2014/4/23 20:29:39.0'",
+    "gold_sql": "SELECT T1.FavoriteCount FROM posts AS T1 INNER JOIN comments AS T2 ON T1.Id = T2.PostId WHERE T2.CreationDate = '2014-04-23 20:29:39.0' AND T2.UserId = 3025",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "2014/4/23 20:29:39.0"
+        ]
+      }
+    ]
+  },
+  {
+    "dataset": "bird",
+    "id": "test_01491",
+    "question": "Lists all patients by ID who were diagnosed with Behcet's and had their exams between 01/01/197 and 12/31/1997.",
+    "evidence": "'Behcet' refers to diagnosis; exam between 01/01/1997 and 12/31/1997 refers to YEAR(Description) > = '1997-1-1' AND YEAR(Description) < '1998-1-1'",
+    "gold_sql": "SELECT ID FROM Examination WHERE `Examination Date` BETWEEN '1997-01-01' AND '1997-12-31' AND Diagnosis = 'Behcet'",
+    "review_reasons": [
+      {
+        "code": "evidence_gold_literal_conflict",
+        "detail": "explicit evidence literal(s) absent from gold SQL",
+        "missing_literals": [
+          "1997-1-1",
+          "1998-1-1"
+        ]
+      }
+    ]
+  }
+]
