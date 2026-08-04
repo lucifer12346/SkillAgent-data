@@ -1,0 +1,1 @@
+database_bundle/*.part_* filter=lfs diff=lfs merge=lfs -text
