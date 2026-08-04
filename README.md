@@ -8,6 +8,7 @@ used by the current Text-to-SQL experiments.
 ```text
 code/SkillAgent/       SkillAgent source, configs, prompts and scripts
 prepared_data/         Filtered train/validation/test JSON and audit records
+database_bundle/       Five Git LFS parts for the complete SQLite bundle
 DB_MANIFEST.json       Inventory of the 303 referenced SQLite databases
 README_FULL_DATA.md    Instructions for using the complete database bundle
 ```
@@ -23,9 +24,16 @@ Prepared split counts:
 | Spider2.0 test | 135 |
 
 The 303 unique SQLite databases occupy 35,792,005,120 bytes uncompressed. They
-are distributed separately from ordinary Git history. Use `DB_MANIFEST.json`
-to verify the expected paths and sizes, then use
-`prepared_data/relocate_db_paths.py` after extracting the database bundle.
+are stored as five Git LFS parts under `database_bundle/`, not in ordinary Git
+history. Follow `database_bundle/README.md` to reassemble and verify the ZIP,
+then use `prepared_data/relocate_db_paths.py` after extraction.
+
+Cloning the complete repository requires Git LFS:
+
+```bash
+git lfs install
+git clone git@github.com:lucifer12346/SkillAgent-data.git
+```
 
 ## Training
 
